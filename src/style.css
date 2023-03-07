@@ -1,0 +1,217 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.divider {
+    margin: 20px 20px;
+    background-color: #6b6b6b;
+    border: none;
+    height: 1px;
+}
+
+.project-header {
+    width: 100%;
+}
+
+.project-title {
+    font-family: Helvetica;
+    background: -webkit-linear-gradient(45deg, #fb41f8, #7c78ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px;
+    inline-size: 200px;
+    word-break: break-all;
+    hyphens: manual;
+    font-size: 20px;
+}
+
+.box {
+    width: max-content;
+}
+
+.links {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 25px;
+}
+
+.project-version {
+    position: relative;
+    float: right;
+    top: 0px;
+    font-family: Helvetica;
+    color: gray;
+    margin: 20px;
+    margin-top: -43px;
+}
+
+.project-description {
+    color: #adadad;
+    line-height: 24px;
+    margin: 20px;
+    max-width: 400px;
+}
+
+.project-link {
+    color: #3f8bee;
+    text-decoration: none;
+    font-family: Helvetica;
+    margin: 20px;
+    
+}
+
+.subtitle {
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 40px;
+}
+
+.main-pg-button {
+    border: none;
+    color: white;
+    padding: 23px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(
+        45deg, 
+        #CA2CC7, 
+        #465FDF
+    ) 1;
+    z-index: 1;
+    font-family: helvetica;
+    margin: 10px 15px;
+    transition: transform 0.2s;
+}
+
+#project-list {
+    display: grid;
+}
+
+.project-view {
+    position: relative;
+    height: 220px;
+    background-color: rgba(100, 100, 100, 0.2);
+    margin: 18px;
+    border-radius: 20px;
+}
+
+.main-pg-button:hover {
+    transform: scale(1.05);
+}
+
+.header-element-1 {
+    margin-left: 100px;
+}
+
+html {
+    background-image: linear-gradient(
+        to right,
+        #2C042E,
+        #051730
+    );
+}
+
+p {
+    font-family: 'Helvetica';
+}
+
+#view-projects-txt {
+    margin-top: 60px;
+}
+
+#title {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    /* 57 for tablets */
+    margin-bottom: -70px;
+    margin-top: -25px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+}
+
+#description {
+    color: gray;
+    font-size: 28px; 
+    /* 35px for tablets */
+    text-align: center;
+}
+
+#view-projects-text {
+    font-size: 28px;
+    color: lightgray;
+    margin-top: 75px;
+}
+
+#socials {
+    background-color: rgba(100, 100, 200, 0.2);
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.social {
+    border-radius: 20px;
+    margin: 10px 20px;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, .3);
+    transition: transform 0.2s;
+}
+
+.social:hover {
+    transform: scale(1.1)
+}
+
+.link {
+    text-decoration: none;
+    vertical-align: bottom;
+}
+
+#line-view-projects {
+    margin-top: -25px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 767px) {
+    #project-list {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }    
+
+    .project-title {
+        inline-size: 500px;
+        word-break: break-all;
+        hyphens: manual;
+        font-size: 24px;
+    }
+
+    #title {
+        font-size: 57px;
+    }
+    
+    #description {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 1220px) {
+    #project-list {
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+    }    
+    
+    .project-title {
+        inline-size: 500px;
+        word-break: break-all;
+        hyphens: manual;
+        font-size: 24px;
+    }
+}
