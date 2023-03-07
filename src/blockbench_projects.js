@@ -4,7 +4,10 @@ const plugins = Object.entries(data).filter(e => e[1].author.includes("SirJain")
 
 const pluginList = document.getElementById("project-list") //get the plugin list element
 for (const [id, plugin] of plugins) {
-    let pluginID = plugin.title.toLowerCase().replaceAll(" ", "_")
+    let pluginID = plugin.title.toLowerCase().replaceAll(" ", "_");
+
+    if (plugin.title === "Minecraft Text Generator") continue;
+
     const div = document.createElement("bb-project");
     div.className = "bb-project";
     div.classList.add("project-view");
