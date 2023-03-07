@@ -186,7 +186,7 @@ p {
     }    
 
     .project-title {
-        inline-size: 500px;
+        inline-size: 220px;
         word-break: break-all;
         hyphens: manual;
         font-size: 24px;
@@ -208,7 +208,7 @@ p {
     }    
     
     .project-title {
-        inline-size: 500px;
+        inline-size: 250px;
         word-break: break-all;
         hyphens: manual;
         font-size: 24px;
