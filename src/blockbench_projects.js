@@ -27,6 +27,10 @@ for (const [id, plugin] of plugins) {
         </div>
 
         <div>
+            <p class="project-authors">By: ${plugin.author}</p>
+        </div>
+
+        <div>
             <p class="project-description">${plugin.description}</p>
         </div>
 

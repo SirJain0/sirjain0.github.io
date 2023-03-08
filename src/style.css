@@ -95,7 +95,7 @@ html {
 
 .project-view {
     position: relative;
-    height: 220px;
+    height: 250px;
     background-color: rgba(100, 100, 100, 0.2);
     margin: 18px;
     border-radius: 20px;
@@ -158,6 +158,14 @@ p {
     margin-top: 20px;
 }
 
+.project-authors {
+    position: relative;
+    font-family: Helvetica;
+    color: gray;
+    margin: 20px;
+    margin-top: 10px;
+}
+
 .social {
     border-radius: 20px;
     margin: 10px 20px;
@@ -208,7 +216,7 @@ p {
     }    
     
     .project-title {
-        inline-size: 250px;
+        inline-size: 290px;
         word-break: break-all;
         hyphens: manual;
         font-size: 24px;
