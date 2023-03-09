@@ -154,9 +154,8 @@ p {
 #title {
     color: white;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
     /* 57 for tablets */
-    margin-bottom: -70px;
     margin-top: -25px;
     text-align: center;
     font-family: Arial;
@@ -164,9 +163,10 @@ p {
 
 #description {
     color: gray;
-    font-size: 28px; 
+    font-size: 24px; 
     /* 35px for tablets */
     text-align: center;
+    margin-top: -20px;
 }
 
 #view-projects-text {
@@ -213,6 +213,7 @@ p {
     margin-bottom: 20px;
 }
 
+/* Tablets */
 @media only screen and (min-width: 767px) {
     #project-list {
         display: grid;
@@ -232,9 +233,11 @@ p {
     
     #description {
         font-size: 35px;
+        margin-top: -40px;
     }
 }
 
+/* Computers */
 @media only screen and (min-width: 1220px) {
     #project-list {
         display: grid;
