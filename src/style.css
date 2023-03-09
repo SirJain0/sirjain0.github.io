@@ -63,7 +63,7 @@ html {
 
 .subtitle {
     color: white;
-    font-family: 'Franklin Gothic Medium';
+    font-family: Arial;
     font-size: 40px;
 }
 
@@ -89,6 +89,28 @@ html {
     transition: transform 0.2s;
 }
 
+.back-button {
+    border: none;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(
+        45deg, 
+        #CA2CC7, 
+        #465FDF
+    ) 1;
+    z-index: 1;
+    font-family: helvetica;
+    margin: 10px 20px;
+    transition: transform 0.2s;
+}
+
 #project-list {
     display: grid;
 }
@@ -102,6 +124,10 @@ html {
 }
 
 .main-pg-button:hover {
+    transform: scale(1.05);
+}
+
+.back-button:hover {
     transform: scale(1.05);
 }
 
@@ -133,7 +159,7 @@ p {
     margin-bottom: -70px;
     margin-top: -25px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium';
+    font-family: Arial;
 }
 
 #description {
