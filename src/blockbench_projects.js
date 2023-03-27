@@ -9,7 +9,7 @@ for (const [id, plugin] of plugins) {
     let pluginID = plugin.title.toLowerCase().replaceAll(" ", "_");
 
     // Skip over MC Text Generator - has special handling
-    if (plugin.title === "Minecraft Text Generator") continue;
+    if (plugin.title === "Minecraft Text Generator" || plugin.title === "Outline Creator") continue;
 
     const div = document.createElement("bb-project");
     div.className = "bb-project";
