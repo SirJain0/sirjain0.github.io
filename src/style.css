@@ -118,7 +118,7 @@ html {
 .project-view {
     position: relative;
     height: 250px;
-    background-color: rgba(100, 100, 100, 0.2);
+    background-color: rgba(100, 100, 100, 0.15);
     margin: 18px;
     border-radius: 20px;
 }
@@ -136,11 +136,7 @@ html {
 }
 
 html {
-    background-image: linear-gradient(
-        to right,
-        #2C042E,
-        #051730
-    );
+    background-color: #1c0c2e;
 }
 
 p {
@@ -176,12 +172,13 @@ p {
 }
 
 #socials {
-    background-color: rgba(100, 100, 200, 0.2);
+    background-color: rgba(100, 100, 200, 0.15);
     padding: 10px;
     border-radius: 20px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
+    display: inline-block;
 }
 
 .project-authors {
@@ -211,6 +208,9 @@ p {
 #line-view-projects {
     margin-top: -25px;
     margin-bottom: 20px;
+    background-color: #454545;
+    border: none;
+    height: 1px;
 }
 
 /* Tablets */
