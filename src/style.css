@@ -1,6 +1,11 @@
+* {
+    font-family: Helvetica;
+}
+
 html {
     height: 100%;
     width: 100%;
+    background-color: #1c0c2e;
 }
 
 .divider {
@@ -15,7 +20,6 @@ html {
 }
 
 .project-title {
-    font-family: Helvetica;
     background: -webkit-linear-gradient(45deg, #fb41f8, #7c78ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -40,7 +44,6 @@ html {
     position: relative;
     float: right;
     top: 0px;
-    font-family: Helvetica;
     color: gray;
     margin: 20px;
     margin-top: -43px;
@@ -56,14 +59,11 @@ html {
 .project-link {
     color: #3f8bee;
     text-decoration: none;
-    font-family: Helvetica;
     margin: 20px;
-    
 }
 
 .subtitle {
     color: white;
-    font-family: Arial;
     font-size: 40px;
 }
 
@@ -84,7 +84,6 @@ html {
         #465FDF
     ) 1;
     z-index: 1;
-    font-family: helvetica;
     margin: 10px 15px;
     transition: transform 0.2s;
 }
@@ -106,7 +105,6 @@ html {
         #465FDF
     ) 1;
     z-index: 1;
-    font-family: helvetica;
     margin: 10px 20px;
     transition: transform 0.2s;
 }
@@ -135,14 +133,6 @@ html {
     margin-left: 100px;
 }
 
-html {
-    background-color: #1c0c2e;
-}
-
-p {
-    font-family: 'Helvetica';
-}
-
 #view-projects-txt {
     margin-top: 60px;
 }
@@ -154,7 +144,6 @@ p {
     /* 57 for tablets */
     margin-top: -25px;
     text-align: center;
-    font-family: Arial;
 }
 
 #description {
@@ -183,7 +172,6 @@ p {
 
 .project-authors {
     position: relative;
-    font-family: Helvetica;
     color: gray;
     margin: 20px;
     margin-top: 10px;
@@ -211,6 +199,39 @@ p {
     background-color: #454545;
     border: none;
     height: 1px;
+}
+
+#view-projects-view {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    gap: 40px;
+    justify-content: center;
+}
+
+.view-project-card {
+    background-color:rgba(100, 100, 100, .1);
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.project-card-title {
+    background: -webkit-linear-gradient(45deg, #fb41f8, #7c78ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#card-title {
+    font-weight: bold;
+}
+
+.project-card-button {
+    margin-left: 20px;
+    text-decoration: none;
+    border-style: solid;
+    border-color:rgba(255, 100, 100, 1);
+    border-radius: 20px;
+    padding: 20px;
 }
 
 /* Tablets */
