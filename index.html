@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 
 <head>
-    <title>SirJain Portfolio</title>
+    <title>SirJain's Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/style.css">
 </head>
 
 <header id="test">
-    <div id="socials">
-        <center>
+    <center>
+        <div id="socials">
             <a class="link" href="https://discord.gg/wM4CKTbFVN">
                 <img class="social" id="discord" src="images/discord_icon.png" width="55" height="55"></img>
             </a>
@@ -20,27 +20,41 @@
             <a class="link" href="https://github.com/SirJain0">
                 <img class="social" id="github" src="images/github_icon.png" width="55" height="55"></img>
             </a>
-        </center>
-    </div>
+        </div>
+    </center>
 </header>
 
 <body>
     <center>
-        <div id="title" class="wrap">
-            <h1 class="title-text">I'm SirJain</h1>
-        </div>
-        <div id="description">
-            <p>MOTIVATION  |  CREATIVITY  |  INSPIRATION</p>
+        <div id="title">
+            <p class="title-text">I'm SirJain</p>
         </div>
         <div id="view-projects-text">             
-            <hr id="line-view-projects" width=100px>
-            <p id="view-projects-txt">View Projects</p>
+
         </div>
-<!--         Buttons to separate pages -->
-        
-        <a class="main-pg-button" style="font-family: 'Arial'; font-size: 24px" href="blockbench/index.html">Blockbench Projects</a>
-        <a class="main-pg-button" style="font-family: 'Arial'; font-size: 24px" href="minecraft/index.html">Minecraft Projects</a>
     </center>
+
+    <div id="view-projects-view">
+        <div class="view-project-card">
+            <div class="project-card-title-div">
+                <p class="project-card-title">Blockbench Projects</p>
+            </div>
+            <p class="project-description" style="text-align: center;">I've made a few small plugins that enhance the Blockbench functionality. I've also made a theme which changes the look of the program.</p>
+            <div class="project-card-button-div">
+                <a href="blockbench/index.html" class="project-card-button">View Projects</a>
+            </div>
+        </div>
+        <div class="view-project-card">
+            <p class="project-card-title">Minecraft Projects</p>
+            <p class="project-description" style="text-align: center;">I've also made some Minecraft content which ties in both my programming and 3D modeling hobbies together to create utility or adventure projects.</p>
+            <a href="minecraft/index.html" class="project-card-button">View Projects</a>
+        </div>
+        <div class="view-project-card">
+            <p class="project-card-title">Miscellaneous Tools</p>
+            <p class="project-description" style="text-align: center;">This is where I showcase some miscellaneous utility tools I've made which don't fall into other categories. <b>Coming soon!</b></p>
+            <!-- <a href="blockbench/index.html" class="project-card-button">View Projects</a> -->
+        </div>
+    </div>
 
     <script type="module" src="src/script.js"></script>
 </body>
