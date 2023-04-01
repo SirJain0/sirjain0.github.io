@@ -24,7 +24,7 @@ body {
     background: -webkit-linear-gradient(45deg, #fb41f8, #7c78ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    inline-size: 200px;
+    inline-size: 250px;
     word-break: break-all;
     hyphens: manual;
     font-size: 20px;
@@ -221,9 +221,6 @@ body {
     }
 
     .project-title {
-        inline-size: 220px;
-        word-break: break-all;
-        hyphens: manual;
         font-size: 24px;
     }
 
@@ -261,5 +258,12 @@ body {
         word-break: break-all;
         hyphens: manual;
         font-size: 24px;
+    }
+}
+
+/* Computers */
+@media only screen and (max-width: 767px) {
+    .project-title {
+        inline-size: 300px;
     }
 }
