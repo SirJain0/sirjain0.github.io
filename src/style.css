@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto:wght@300;500&display=swap');
 html {
     height: 100%;
     width: 100%;
@@ -5,7 +6,7 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Poppins';
 }
 
 .divider {
@@ -58,6 +59,7 @@ body {
     line-height: 24px;
     margin: 0px 20px;
     max-width: 400px;
+    font-weight: 300;
 }
 
 .project-link {
@@ -82,14 +84,6 @@ body {
     background-color: rgba(100, 100, 100, 0.15);
     margin: 18px;
     border-radius: 20px;
-}
-
-.main-pg-button:hover {
-    transform: scale(1.05);
-}
-
-.back-button:hover {
-    transform: scale(1.05);
 }
 
 .header-element-1 {
@@ -194,16 +188,17 @@ body {
 }
 
 .project-card-button {
+    font-weight: 200;
     display: inline-block;
     background-image: linear-gradient(
         45deg, 
         #CA2CC7, 
         #465FDF
     );
-    padding: 15px 20px;
+    padding: 15px 25px;
     text-decoration: none;
     color: white;
-    font-weight: 300;
+    font-weight: 100;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 50px;
     margin: 40px 0px 20px;
@@ -262,7 +257,7 @@ body {
     }
     
     .project-title {
-        inline-size: 290px;
+        inline-size: 300px;
         word-break: break-all;
         hyphens: manual;
         font-size: 24px;
