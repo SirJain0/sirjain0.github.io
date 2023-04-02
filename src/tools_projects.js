@@ -2,9 +2,9 @@ const projects = [
     {
         "name": "Cite Generator",
         "description": "A small tool that allows you to generate a cite for a website, which can be used for bibliographies!",
-        "version": "Unreleased",
+        "version": "1.0.0",
         "author": "SirJain",
-        "link": "../tools/site_generator/index.html" 
+        "link": "../tools/cite_generator/index.html" 
     }
 ]
 
