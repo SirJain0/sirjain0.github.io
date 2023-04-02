@@ -199,7 +199,7 @@ body {
     text-decoration: none;
     color: white;
     font-weight: 100;
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     margin: 40px 0px 20px;
     transition: transform 0.2s;
@@ -207,6 +207,14 @@ body {
 
 .project-card-button:hover {
     transform: scale(1.05)
+}
+
+.vl {
+    border-left: 1px solid rgb(81, 81, 81);
+    height: 580px;
+    float: left;
+    margin: 20px;
+    margin-top: 70px;
 }
 
 /* Tablets */
@@ -240,6 +248,49 @@ body {
     .title-text {
         font-size: 80px;
     }
+}
+
+.tool-title {
+    width: 100%;
+    text-align: center;
+}
+
+.cite-generator-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 430px;
+    text-align: center;
+    flex-direction: column;
+    background:rgba(100, 100, 100, .1);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 60px;
+    float: left;
+}
+
+input {
+    display: inline;
+    width: 380px;
+    padding: 20px;
+    border-radius: 20px;
+    border: rgba(0, 0, 0, 0);
+    background-color: rgba(100, 100, 100, .2);
+    font-family: 'Poppins';
+    color: white;
+    transition: border 0.1s;
+}
+
+input:focus {
+    outline:none;
+    border: 1px solid #CA2CC7;
+    border-radius: 20px;
+}
+
+#form-container {
+    display: grid;
+    flex-direction: column;
+    gap: 20px;
 }
 
 /* Computers */
