@@ -4,7 +4,7 @@ const projects = [
         "description": "A small tool that allows you to generate a cite for a website, which can be used for bibliographies!",
         "version": "Unreleased",
         "author": "SirJain",
-        "link": "n/a" 
+        "link": "../tools/site_generator/index.html" 
     }
 ]
 
