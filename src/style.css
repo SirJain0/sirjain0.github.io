@@ -209,7 +209,7 @@ body {
     transform: scale(1.05)
 }
 
-.output-text {
+#output-text {
     color: white;
 }
 

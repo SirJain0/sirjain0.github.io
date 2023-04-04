@@ -15,29 +15,31 @@
     <div class="cite-generator-container">
         <form action="" id="form-container">
             <div>
-                <input type="text" id="last-name" placeholder="Jain">
+                <input type="text" id="last-name" placeholder="Author's Last Name">
             </div>
             <div>
-                <input type="text" id="first-name-initial" placeholder="Sir">
+                <input type="text" id="first-name-initial" placeholder="Author's First Name">
             </div>
             <div>
-                <input type="text" id="date" placeholder="2022, June 3">
+                <input type="text" id="date" placeholder="Date of Publication">
             </div>
             <div>
-                <input type="text" id="article-title" placeholder="My Article Name">
+                <input type="text" id="article-title" placeholder="Article Name">
             </div>
             <div>
-                <input type="text" id="publication-name" placeholder="SirJain Publications">
+                <input type="text" id="publication-name" placeholder="Publication Name">
             </div>
             <div>
-                <input type="text" id="url" placeholder="https://sirjain0.github.io">
+                <input type="text" id="url" placeholder="Website URL">
             </div>
         </form>
-        <a href="" id="generate" class="project-card-button" style="margin-left: auto; margin-right: auto; text-align: center; justify-content: center; width: 100px; margin-bottom: -1px;">Generate</a>
+        <button id="generate" class="project-card-button" style="cursor: pointer; border: none; font-size: 16px; font-family: 'Poppins'; margin-left: auto; margin-right: auto; text-align: center; justify-content: center; width: 130px; margin-bottom: -1px;">Generate</button>
     </div>
     <div class="output-container">
-        <p class="output-text"> Testing Bibliography!</p>
+        <p id="output-text"></p>
         <a href="" class="project-card-button">Copy to Clipboard</a>
     </div>
+
+    <script type="module" src="../../src/cite_generator.js"></script>
 </body>
 </html>
