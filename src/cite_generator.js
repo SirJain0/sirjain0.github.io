@@ -14,13 +14,14 @@ let var1, var2, var3, var4, var5, var6;
 function writeValues() {
     let citation = "";
 
-    if (lastName.value !== "") var1 = citation.concat(lastName.value)
-    if (firstName.value !== "") var2 = var1.concat(", " + firstName.value)
-    if (firstName.value !== "" || lastName.value !== "") var3 = var2.concat(".");
+    var1 = citation.concat(lastName.value)
+    var2 = var1.concat(", " + firstName.value)
+    var3 = var2.concat(".");
         
-    console.log(var3) 
-
+    console.log(var3)
     outputText.innerHTML = var3;
+
+    navigator.clipboard.writeText(var3);
 }
 
 generateButton.addEventListener('click', writeValues)
