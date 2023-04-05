@@ -25,8 +25,12 @@ function writeValues() {
     console.log(var3)
     outputText.innerHTML = var3;
 
-    navigator.clipboard.writeText(var3);
+    copyTextToClipboard(var3);
     outputText.style.setProperty("color", "white");
+}
+
+function copyTextToClipboard(value) {
+    navigator.clipboard.writeText(value)
 }
 
 generateButton.addEventListener('click', writeValues)
