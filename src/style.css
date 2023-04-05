@@ -261,6 +261,7 @@ body {
     width: 100%;
     text-align: center;
     font-size: 30px;
+    margin-top: -20px;
 }
 
 .cite-generator-container {
@@ -300,6 +301,15 @@ input:focus {
     display: grid;
     grid-template-columns: auto;
     gap: 20px;
+}
+
+.tool-page-description {
+    color: gray;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -10px;
+    justify-content: center;
 }
 
 /* Computers */
