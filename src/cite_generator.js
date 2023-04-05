@@ -11,6 +11,10 @@ const outputText = document.getElementById("output-text");
 
 let var1, var2, var3, var4, var5, var6;
 
+if (outputText.innerHTML === "Result will be shown here.") {
+    outputText.style.setProperty("color", "gray");
+}
+
 function writeValues() {
     let citation = "";
 
@@ -22,6 +26,7 @@ function writeValues() {
     outputText.innerHTML = var3;
 
     navigator.clipboard.writeText(var3);
+    outputText.style.setProperty("color", "white");
 }
 
 generateButton.addEventListener('click', writeValues)
