@@ -217,7 +217,7 @@ body {
     background:rgba(100, 100, 100, .1);
     padding: 20px;
     border-radius: 20px;
-    width: 55%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -260,6 +260,7 @@ body {
 .tool-title {
     width: 100%;
     text-align: center;
+    font-size: 30px;
 }
 
 .cite-generator-container {
@@ -268,7 +269,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 55%;
+    width: 65%;
     justify-content: center;
     flex-direction: column;
     background:rgba(100, 100, 100, .1);
@@ -279,7 +280,7 @@ body {
 
 input {
     display: inline;
-    width:85%;
+    width: 85%;
     padding: 20px;
     border-radius: 20px;
     border: rgba(0, 0, 0, 0);
@@ -297,7 +298,7 @@ input:focus {
 
 #form-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     gap: 20px;
 }
 
@@ -317,6 +318,26 @@ input:focus {
         word-break: break-all;
         hyphens: manual;
         font-size: 24px;
+    }
+
+    #form-container {
+        grid-template-columns: auto auto;
+    }
+
+    .tool-title {
+        font-size: 42px;
+    }
+
+    .output-container {
+        width: 55%;
+    }
+
+    .cite-generator-container {
+        width: 55%;
+    }
+
+    input {
+        width: 90%;
     }
 }
 
