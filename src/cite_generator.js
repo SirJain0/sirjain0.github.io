@@ -9,28 +9,46 @@ const url = document.getElementById("url");
 const generateButton = document.getElementById("generate");
 const outputText = document.getElementById("output-text");
 
-let var1, var2, var3, var4, var5, var6;
+let citation, allFieldsEmpty;
 
+// Check for the filler gray text and change the style appropriately
 if (outputText.innerHTML === "Result will be shown here.") {
     outputText.style.setProperty("color", "gray");
 }
 
+// Function that updates the HTML according to what the user inputs
 function writeValues() {
-    let citation = "";
+    allFieldsEmpty = (lastName.value === "" && firstName.value === "" && date.value === "" && articleTitle.value === "" && publicationName.value === "" && url.value === "");
+    citation = "";
 
-    var1 = citation.concat(lastName.value)
-    var2 = var1.concat(", " + firstName.value)
-    var3 = var2.concat(".");
-        
-    console.log(var3)
-    outputText.innerHTML = var3;
+    // Check - is there input in the fields?
+    if (allFieldsEmpty) {
+        outputText.innerHTML = `Please fill out some fields.`;
+        outputText.style.setProperty("color", "#F45555");
+    }
 
-    copyTextToClipboard(var3);
-    outputText.style.setProperty("color", "white");
+    // Run if everything is okay
+    else {
+        if (lastName.value != "") citation += lastName.value;
+        if (lastName.value != "" && firstName.value != "") citation += ", ";
+        if (firstName.value != "") citation += firstName.value;
+        if (lastName.value != "" || firstName.value != "") citation += ". "
+        if (date.value != "") citation += `(${date.value})` + ". ";
+        if (articleTitle.value != "") citation += `<i>${articleTitle.value}</i>` + ". ";
+        if (publicationName.value != "") citation += publicationName.value + ". ";
+        if (url.value != "") citation += `<br>${url.value}`;
+
+        outputText.style.setProperty("color", "white");
+        outputText.innerHTML = citation;
+    }
+
+    copyTextToClipboard(citation);
 }
 
+// Copies text to clipboard
 function copyTextToClipboard(value) {
-    navigator.clipboard.writeText(value)
+    navigator.clipboard.writeText(value);
 }
 
-generateButton.addEventListener('click', writeValues)
+// Event listener to check if the button is clicked
+generateButton.addEventListener('click', writeValues);
