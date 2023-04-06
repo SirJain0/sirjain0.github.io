@@ -25,6 +25,7 @@ function writeValues() {
     if (allFieldsEmpty) {
         outputText.innerHTML = `Please fill out some fields.`;
         outputText.style.setProperty("color", "#F45555");
+        alert("Please fill out some fields.");
     }
 
     // Run if everything is okay
