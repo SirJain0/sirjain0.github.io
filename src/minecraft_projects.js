@@ -19,6 +19,13 @@ const projects = [
         "version": "1.0.1",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/convenient-hitboxes/" 
+    },
+    {
+        "name": "Tiramisu",
+        "description": "Mod that adds Tiramisu to Minecraft!",
+        "version": "1.0.0",
+        "author": "SirJain",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/tiramisu/" 
     }
 ]
 
