@@ -16,7 +16,8 @@ const views = [
     }
 ]
 
-const projectList = document.getElementById("view-projects-view") //get the plugin list element
+// Get the view-projects-view element
+const projectList = document.getElementById("view-projects-view")
 
 for (const view of views) {
     const div = document.createElement("project-type");

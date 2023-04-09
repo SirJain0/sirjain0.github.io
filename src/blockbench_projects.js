@@ -19,7 +19,7 @@ const projects = [
     }
 ]
 
-// Get the plugin list element
+// Get the project-list element
 const projectList = document.getElementById("project-list");
 
 for (const project of projects) {

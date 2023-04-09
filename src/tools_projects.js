@@ -8,7 +8,8 @@ const projects = [
     }
 ]
 
-const projectList = document.getElementById("project-list") //get the plugin list element
+// Get the project-list element
+const projectList = document.getElementById("project-list")
 
 // Iterate and display each project
 for (const project of projects) {
