@@ -80,7 +80,7 @@ body {
 
 .pg-title {
     color: white;
-    font-size: 40px;
+    font-size: 28px;
     width: 100%;
     text-align: center;
 }
@@ -322,8 +322,8 @@ input:focus {
         font-size: 20px;
     }
 
-    .title-text {
-        font-size: 80px;
+    .pg-title {
+        font-size: 40px;
     }
 }
 
@@ -363,6 +363,10 @@ input:focus {
 
     input {
         width: 90%;
+    }
+    
+    .title-text {
+        font-size: 80px;
     }
 }
 
