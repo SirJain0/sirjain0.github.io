@@ -1,4 +1,13 @@
+/* Custom font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto:wght@300;500&display=swap');
+
+/* Declare some variables */
+:root {
+    --gradient-color-1: #fb41f8;
+    --gradient-color-2: #7c78ff;
+    --translucent-bg-color: rgba(100, 100, 100, 0.1);
+}
+
 html {
     height: 100%;
     width: 100%;
@@ -21,7 +30,7 @@ body {
 }
 
 .project-title {
-    background: -webkit-linear-gradient(45deg, #fb41f8, #7c78ff);
+    background: -webkit-linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     inline-size: 250px;
@@ -69,9 +78,11 @@ body {
     margin-left: 20px;
 }
 
-.subtitle {
+.pg-title {
     color: white;
-    font-size: 40px;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
 }
 
 #project-list {
@@ -81,13 +92,15 @@ body {
 .project-view {
     position: relative;
     height: 250px;
-    background-color: rgba(100, 100, 100, 0.1);
+    background-color: var(--translucent-bg-color);
     margin: 18px;
     border-radius: 20px;
 }
 
-.header-element-1 {
-    margin-left: 100px;
+.back-button {
+    margin-left: 20px; 
+    font-family: 'Poppins'; 
+    font-size: 18px;
 }
 
 #view-projects-txt {
@@ -106,30 +119,29 @@ body {
 .title-text {
     font-weight: 200;
     font-size: 60px;
+    width: 100%;
+    text-align: center;
 }
 
 #description {
     color: gray;
-    font-size: 24px; 
-    /* 35px for tablets */
+    font-size: 24px; /* 35px for tablets */
     text-align: center;
     margin-top: -20px;
-}
-
-#view-projects-text {
-    font-size: 28px;
-    color: lightgray;
-    margin-top: 75px;
 }
 
 #socials {
     background-color: rgba(100, 100, 200, 0.15);
     padding: 10px;
     border-radius: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin: 20px 0px 20px 20px;
     display: inline-block;
+    align-items: center;
+}
+
+#main-pg-header {
+    width: 100%;
+    text-align: center;
 }
 
 .project-authors {
@@ -181,13 +193,13 @@ body {
 
 .project-card-title {
     display: inline-block;
-    background: -webkit-linear-gradient(45deg, #fb41f8, #7c78ff);
+    background: -webkit-linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
 
-.project-card-button {
+button {
     font-weight: 200;
     display: inline-block;
     background-image: linear-gradient(
@@ -201,9 +213,13 @@ body {
     font-weight: 100;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
-    margin: 40px 0px 20px;
+    margin: 40px 20px 20px;
     transition: transform 0.2s;
     position: relative;
+    border: none;
+    font-family: 'Poppins';
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .project-card-button:hover {
@@ -219,43 +235,9 @@ body {
     padding: 20px;
     border-radius: 20px;
     width: 65%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
     margin-top: 20px;
-}
-
-/* Tablets */
-@media only screen and (min-width: 767px) {
-    #project-list {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-    
-    #view-projects-view {
-        grid-template-columns: 30% 30%;
-    }
-
-    .project-title {
-        font-size: 24px;
-    }
-
-    #title {
-        font-size: 80px;
-    }
-    
-    #description {
-        font-size: 35px;
-        margin-top: -40px;
-    }
-
-    .project-card-title {
-        font-size: 20px;
-    }
-
-    .title-text {
-        font-size: 80px;
-    }
 }
 
 .tool-title {
@@ -313,6 +295,41 @@ input:focus {
     justify-content: center;
 }
 
+/* Tablets */
+@media only screen and (min-width: 767px) {
+    /* Make page titles smaller if on smaller devices */
+    #project-list {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    #view-projects-view {
+        grid-template-columns: 30% 30%;
+    }
+
+    .project-title {
+        font-size: 24px;
+        inline-size: 300px;
+    }
+
+    #title {
+        font-size: 80px;
+    }
+    
+    #description {
+        font-size: 35px;
+        margin-top: -40px;
+    }
+
+    .project-card-title {
+        font-size: 20px;
+    }
+
+    .pg-title {
+        font-size: 40px;
+    }
+}
+
 /* Computers */
 @media only screen and (min-width: 1220px) {
     #project-list {
@@ -350,11 +367,13 @@ input:focus {
     input {
         width: 90%;
     }
+    
+    .title-text {
+        font-size: 80px;
+    }
 }
 
-/* Computers */
+/* Duplicate? */
 @media only screen and (max-width: 767px) {
-    .project-title {
-        inline-size: 300px;
-    }
+    
 }
