@@ -2,13 +2,14 @@ const request = await fetch("https://raw.githubusercontent.com/JannisX11/blockbe
 const data = await request.json()
 const plugins = Object.entries(data).filter(e => e[1].author.includes("SirJain"))
 
-const pluginList = document.getElementById("project-list") //get the plugin list element
+// Get the plugin list element
+const pluginList = document.getElementById("project-list") 
 
 // Iterate and display each project
-for (const [id, plugin] of plugins) {
+for (const plugin of plugins) {
     let pluginID = plugin.title.toLowerCase().replaceAll(" ", "_");
 
-    // Skip over MC Text Generator - has special handling
+    // Skip over MC Text Generator and Outline Creator
     if (plugin.title === "Minecraft Text Generator" || plugin.title === "Outline Creator") continue;
 
     const div = document.createElement("bb-project");

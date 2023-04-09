@@ -1,4 +1,8 @@
+/* Make gradient colors and card backgrounds variables */
+
+/* Custom font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto:wght@300;500&display=swap');
+
 html {
     height: 100%;
     width: 100%;
@@ -187,6 +191,7 @@ body {
     font-weight: bold;
 }
 
+/* Replace with generalized class that changes the button styles */
 .project-card-button {
     font-weight: 200;
     display: inline-block;
@@ -219,43 +224,9 @@ body {
     padding: 20px;
     border-radius: 20px;
     width: 65%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
     margin-top: 20px;
-}
-
-/* Tablets */
-@media only screen and (min-width: 767px) {
-    #project-list {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-    
-    #view-projects-view {
-        grid-template-columns: 30% 30%;
-    }
-
-    .project-title {
-        font-size: 24px;
-    }
-
-    #title {
-        font-size: 80px;
-    }
-    
-    #description {
-        font-size: 35px;
-        margin-top: -40px;
-    }
-
-    .project-card-title {
-        font-size: 20px;
-    }
-
-    .title-text {
-        font-size: 80px;
-    }
 }
 
 .tool-title {
@@ -313,6 +284,40 @@ input:focus {
     justify-content: center;
 }
 
+/* Tablets */
+@media only screen and (min-width: 767px) {
+    /* Make page titles smaller if on smaller devices */
+    #project-list {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    #view-projects-view {
+        grid-template-columns: 30% 30%;
+    }
+
+    .project-title {
+        font-size: 24px;
+    }
+
+    #title {
+        font-size: 80px;
+    }
+    
+    #description {
+        font-size: 35px;
+        margin-top: -40px;
+    }
+
+    .project-card-title {
+        font-size: 20px;
+    }
+
+    .title-text {
+        font-size: 80px;
+    }
+}
+
 /* Computers */
 @media only screen and (min-width: 1220px) {
     #project-list {
@@ -352,7 +357,7 @@ input:focus {
     }
 }
 
-/* Computers */
+/* Duplicate? */
 @media only screen and (max-width: 767px) {
     .project-title {
         inline-size: 300px;
