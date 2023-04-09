@@ -98,7 +98,6 @@ body {
 }
 
 .back-button {
-    font-weight: 100; 
     margin-left: 20px; 
     font-family: 'Poppins'; 
     font-size: 18px;
@@ -200,8 +199,7 @@ body {
     font-weight: bold;
 }
 
-/* Replace with generalized class that changes the button styles */
-.project-card-button {
+button {
     font-weight: 200;
     display: inline-block;
     background-image: linear-gradient(
@@ -218,6 +216,10 @@ body {
     margin: 40px 20px 20px;
     transition: transform 0.2s;
     position: relative;
+    border: none;
+    font-family: 'Poppins';
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .project-card-button:hover {

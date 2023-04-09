@@ -31,7 +31,9 @@ for (const view of views) {
         </div>
         <p class="project-description" style="text-align: center;">${view.description}</p>
         <div class="project-card-button-div">
-            <a href="${view.path}" class="project-card-button">View Projects</a>
+            <a href="${view.path}">
+                <button class="project-card-button">View Projects</button>
+            </a>
         </div>
     `;
 
