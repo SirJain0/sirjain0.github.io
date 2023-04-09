@@ -1,7 +1,12 @@
-/* Make gradient colors and card backgrounds variables */
-
 /* Custom font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto:wght@300;500&display=swap');
+
+/* Declare some variables */
+:root {
+    --gradient-color-1: #fb41f8;
+    --gradient-color-2: #7c78ff;
+    --translucent-bg-color: rgba(100, 100, 100, 0.1);
+}
 
 html {
     height: 100%;
@@ -25,7 +30,7 @@ body {
 }
 
 .project-title {
-    background: -webkit-linear-gradient(45deg, #fb41f8, #7c78ff);
+    background: -webkit-linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     inline-size: 250px;
@@ -85,7 +90,7 @@ body {
 .project-view {
     position: relative;
     height: 250px;
-    background-color: rgba(100, 100, 100, 0.1);
+    background-color: var(--translucent-bg-color);
     margin: 18px;
     border-radius: 20px;
 }
@@ -188,7 +193,7 @@ body {
 
 .project-card-title {
     display: inline-block;
-    background: -webkit-linear-gradient(45deg, #fb41f8, #7c78ff);
+    background: -webkit-linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
