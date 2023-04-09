@@ -81,6 +81,8 @@ body {
 .pg-title {
     color: white;
     font-size: 40px;
+    width: 100%;
+    text-align: center;
 }
 
 #project-list {
@@ -118,30 +120,29 @@ body {
 .title-text {
     font-weight: 200;
     font-size: 60px;
+    width: 100%;
+    text-align: center;
 }
 
 #description {
     color: gray;
-    font-size: 24px; 
-    /* 35px for tablets */
+    font-size: 24px; /* 35px for tablets */
     text-align: center;
     margin-top: -20px;
-}
-
-#view-projects-text {
-    font-size: 28px;
-    color: lightgray;
-    margin-top: 75px;
 }
 
 #socials {
     background-color: rgba(100, 100, 200, 0.15);
     padding: 10px;
     border-radius: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin: 20px 0px 20px 20px;
     display: inline-block;
+    align-items: center;
+}
+
+#main-pg-header {
+    width: 100%;
+    text-align: center;
 }
 
 .project-authors {
