@@ -309,6 +309,7 @@ input:focus {
 
     .project-title {
         font-size: 24px;
+        inline-size: 300px;
     }
 
     #title {
@@ -374,7 +375,5 @@ input:focus {
 
 /* Duplicate? */
 @media only screen and (max-width: 767px) {
-    .project-title {
-        inline-size: 300px;
-    }
+    
 }
