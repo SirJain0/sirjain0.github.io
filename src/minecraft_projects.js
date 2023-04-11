@@ -1,7 +1,7 @@
 const projects = [
     {
         "name": "Extensive Diamonds",
-        "description": "Mod that adds new diamond types to Minecraft!",
+        "description": "Mod that adds three new diamond types to Minecraft!",
         "version": "1.0.5",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/extensive-diamonds/" 
@@ -15,14 +15,14 @@ const projects = [
     },
     {
         "name": "Convenient Hitboxes",
-        "description": "Mod that adds a button which toggles entity hitbox visibility, having the same functionality as F3+B.",
+        "description": "Mod that adds a button toggling entity hitbox visibility, having the same functionality as F3+B.",
         "version": "1.0.2",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/convenient-hitboxes/" 
     },
     {
         "name": "Tiramisu",
-        "description": "Mod that adds tiramisu to Minecraft!",
+        "description": "Mod that adds bitesized and full tiramisu to Minecraft!",
         "version": "1.0.0",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/tiramisu/" 
@@ -41,12 +41,14 @@ for (const project of projects) {
     div.innerHTML = 
     `
         <div class="project-header">
-            <div class="box">
+            <div>
                 <h2 class="project-title">${project.name}</h2>
             </div>
 
-            <div class="box2">
-                <h3 class="project-version">${project.version}</h3>
+            <div>
+                <a class="project-link" href="${project.link}">
+                <span class="material-symbols-outlined">open_in_new</span>
+            </a>
             </div>
         </div>
 
@@ -58,8 +60,13 @@ for (const project of projects) {
             <p class="project-description">${project.description}</p>
         </div>
 
-        <div class="links">
-            <a class="project-link" href="${project.link}">Official Link</a>
+        <center>
+        <hr class="divider" style="margin-top: 30px;">
+        </center>
+
+        <div class="project-footer">
+            <h3 class="project-version">Version: ${project.version}</h3>
+            <p class="project-mod-tag">Hey</p>
         </div>
     `;
 

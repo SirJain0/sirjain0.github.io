@@ -44,10 +44,6 @@ body {
     font-size: 20px;
 }
 
-.box {
-    width: max-content;
-}
-
 .links {
     position: absolute;
     bottom: 0px;
@@ -56,11 +52,14 @@ body {
 
 .project-version {
     position: relative;
-    float: right;
-    top: 0px;
     color: gray;
-    margin: 20px;
-    margin-top: -50px;
+    font-size: 16px;
+    margin-bottom: -2px;
+}
+
+.project-mod-tag {
+    margin-bottom: -20px;
+    font-size: 16px;
 }
 
 .project-description {
@@ -72,10 +71,18 @@ body {
 }
 
 .project-link {
-    position: relative;
     color: #3f8bee;
     text-decoration: none;
-    margin-left: 20px;
+    float: right;
+    margin: 20px;
+    margin-top: -50px;
+}
+
+.project-footer {
+    display: flex;
+    bottom: 0px;
+    justify-content: space-between;
+    margin: 20px;
 }
 
 .pg-title {
@@ -91,7 +98,7 @@ body {
 
 .project-view {
     position: relative;
-    height: 250px;
+    height: 280px;
     background-color: var(--translucent-bg-color);
     margin: 18px;
     border-radius: 20px;
