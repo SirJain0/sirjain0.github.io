@@ -247,6 +247,12 @@ button {
     margin-top: -20px;
 }
 
+.container {
+    max-width: 1580px;
+    margin: 0 auto;
+    padding: 20px 20px 80px;
+}
+
 .cite-generator-container {
     position: relative;
     display: flex;
@@ -338,7 +344,7 @@ input:focus {
     }    
 
     #view-projects-view {
-        grid-template-columns: 20% 20% 20%;
+        grid-template-columns: 22% 22% 22%;
     }
     
     .project-title {
@@ -371,9 +377,4 @@ input:focus {
     .title-text {
         font-size: 80px;
     }
-}
-
-/* Duplicate? */
-@media only screen and (max-width: 767px) {
-    
 }
