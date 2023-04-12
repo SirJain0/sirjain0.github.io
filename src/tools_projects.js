@@ -26,7 +26,7 @@ for (const project of projects) {
                 <span class="material-symbols-outlined">open_in_new</span>
             </a>
         </div>
-        <p class="project-authors"><b>By:</b> ${project.author}</p>
+        <p class="project-authors">By: ${project.author}</p>
         <p class="project-description">${project.description}</p>
         <div class="spacer"></div>
         <div class="project-footer">

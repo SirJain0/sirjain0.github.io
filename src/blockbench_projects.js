@@ -37,7 +37,7 @@ for (const project of projects) {
                 <span class="material-symbols-outlined">open_in_new</span>
             </a>
         </div>
-        <p class="project-authors"><b>By:</b> ${project.author}</p>
+        <p class="project-authors">By: ${project.author}</p>
         <p class="project-description">${project.description}</p>
         <div class="spacer"></div>
         <div class="project-footer">
@@ -68,7 +68,7 @@ for (const [id, plugin] of plugins) {
                 <span class="material-symbols-outlined">open_in_new</span>
             </a>
         </div>
-        <p class="project-authors"><b>By:</b> ${plugin.author}</p>
+        <p class="project-authors">By: ${plugin.author}</p>
         <p class="project-description">${plugin.description}</p>
         <div class="spacer"></div>
         <div class="project-footer">
