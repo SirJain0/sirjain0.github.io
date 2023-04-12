@@ -64,7 +64,7 @@ for (const [id, plugin] of plugins) {
     `
         <div class="project-header">
             <h3 class="project-title">${plugin.title}</h2>
-            <a class="project-link" href="${plugin.link}" target="_blank">
+            <a class="project-link" href="https://blockbench.net/plugins/${pluginID}" target="_blank">
                 <span class="material-symbols-outlined">open_in_new</span>
             </a>
         </div>
