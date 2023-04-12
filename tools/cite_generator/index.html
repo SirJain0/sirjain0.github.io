@@ -8,39 +8,42 @@
     <title>Cite Generator</title>
 </head>
 <body>
-    <div class="cite-generator-header">
-        <a href="../../tools_projects/index.html">
-            <button class="project-card-button back-button">Home</button>
-        </a>        
-        <h1 class="pg-title tool-title">Cite Generator</h1>
-        <p class="tool-page-description">This tool follows the APA style formatting. This is a hobby project and not a formal or official tool. All of the citations generated are automatically copied to your clipboard!</p>
+    <div class="container">
+        <div class="cite-generator-header">
+            <a href="../../tools_projects/index.html">
+                <button class="project-card-button back-button">Home</button>
+            </a>        
+            <h1 class="pg-title tool-title">Cite Generator</h1>
+            <p class="tool-page-description">This tool follows the APA style formatting. This is a hobby project and not a formal or official tool. All of the citations generated are automatically copied to your clipboard!</p>
+        </div>
+        <div class="cite-generator-container">
+            <form action="" id="form-container">
+                <div>
+                    <input type="text" id="last-name" placeholder="Author's Last Name">
+                </div>
+                <div>
+                    <input type="text" id="first-name-initial" placeholder="Author's First Name">
+                </div>
+                <div>
+                    <input type="text" id="date" placeholder="Date of Publication">
+                </div>
+                <div>
+                    <input type="text" id="article-title" placeholder="Article Name">
+                </div>
+                <div>
+                    <input type="text" id="publication-name" placeholder="Publication Name">
+                </div>
+                <div>
+                    <input type="text" id="url" placeholder="Website URL">
+                </div>
+            </form>
+            <button id="generate" class="project-card-button" style="cursor: pointer; border: none; font-size: 16px; font-family: 'Poppins'; margin-left: auto; margin-right: auto; text-align: center; justify-content: center; width: 130px; margin-bottom: -1px;">Generate</button>
+        </div>
+        <div class="output-container">
+            <p id="output-text">Result will be shown here.</p>
+        </div>
     </div>
-    <div class="cite-generator-container">
-        <form action="" id="form-container">
-            <div>
-                <input type="text" id="last-name" placeholder="Author's Last Name">
-            </div>
-            <div>
-                <input type="text" id="first-name-initial" placeholder="Author's First Name">
-            </div>
-            <div>
-                <input type="text" id="date" placeholder="Date of Publication">
-            </div>
-            <div>
-                <input type="text" id="article-title" placeholder="Article Name">
-            </div>
-            <div>
-                <input type="text" id="publication-name" placeholder="Publication Name">
-            </div>
-            <div>
-                <input type="text" id="url" placeholder="Website URL">
-            </div>
-        </form>
-        <button id="generate" class="project-card-button" style="cursor: pointer; border: none; font-size: 16px; font-family: 'Poppins'; margin-left: auto; margin-right: auto; text-align: center; justify-content: center; width: 130px; margin-bottom: -1px;">Generate</button>
-    </div>
-    <div class="output-container">
-        <p id="output-text">Result will be shown here.</p>
-    </div>
+    
     <script type="module" src="../../src/cite_generator.js"></script>
 </body>
 </html>
