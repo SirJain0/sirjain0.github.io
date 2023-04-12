@@ -63,7 +63,7 @@ for (const [id, plugin] of plugins) {
     div.innerHTML = 
     `
         <div class="project-header">
-            <h3 class="project-title">${plugin.name}</h2>
+            <h3 class="project-title">${plugin.title}</h2>
             <a class="project-link" href="${plugin.link}" target="_blank">
                 <span class="material-symbols-outlined">open_in_new</span>
             </a>
