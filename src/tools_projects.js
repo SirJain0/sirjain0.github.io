@@ -4,7 +4,8 @@ const projects = [
         "description": "A small tool that allows you to generate a citation for a website (following the APA formatting)!",
         "version": "1.0.0",
         "author": "SirJain",
-        "link": "../tools/cite_generator/index.html" 
+        "link": "../tools/cite_generator/index.html" ,
+        "tag": "Website"
     }
 ]
 
@@ -20,25 +21,17 @@ for (const project of projects) {
     div.innerHTML = 
     `
         <div class="project-header">
-            <div class="box">
-                <h2 class="project-title">${project.name}</h2>
-            </div>
-
-            <div class="box2">
-                <h3 class="project-version">${project.version}</h3>
-            </div>
+            <h3 class="project-title">${project.name}</h2>
+            <a class="project-link" href="${project.link}">
+                <span class="material-symbols-outlined">open_in_new</span>
+            </a>
         </div>
-
-        <div>
-            <p class="project-authors">By: ${project.author}</p>
-        </div>
-
-        <div>
-            <p class="project-description">${project.description}</p>
-        </div>
-
-        <div class="links">
-            <a class="project-link" href="${project.link}">Official Link</a>
+        <p class="project-authors">By: ${project.author}</p>
+        <p class="project-description">${project.description}</p>
+        <div class="spacer"></div>
+        <div class="project-footer">
+            <span class="project-version">Version: ${project.version}</span>
+            <span class="project-tag ${project.tag.toLowerCase()}-tag">${project.tag}</span>
         </div>
     `;
 
