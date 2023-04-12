@@ -58,8 +58,12 @@ body {
 }
 
 .project-mod-tag {
-    margin-bottom: -20px;
-    font-size: 16px;
+    margin-top: -10px;
+    padding: 9px 12px;
+    border:#708f28 2px solid;
+    border-radius: 20px;
+    color: #708f28;
+    font-size: 14px;
 }
 
 .project-description {
@@ -82,7 +86,11 @@ body {
     display: flex;
     bottom: 0px;
     justify-content: space-between;
-    margin: 20px;
+    margin: 50px 20px;
+}
+
+.spacer {
+    flex: 1;
 }
 
 .pg-title {
@@ -97,11 +105,12 @@ body {
 }
 
 .project-view {
-    position: relative;
+    /* position: relative; */
     height: 280px;
     background-color: var(--translucent-bg-color);
     margin: 18px;
     border-radius: 20px;
+    color: #ADADAD;
 }
 
 .back-button {
@@ -155,7 +164,7 @@ body {
     position: relative;
     color: gray;
     margin: 20px;
-    margin-top: 10px;
+    margin-top: -1px;
 }
 
 .social {

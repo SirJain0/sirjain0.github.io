@@ -8,14 +8,16 @@ const projects = [
         "description": "A theme that effectively brings the Glassmorphism style into Blockbench!",
         "version": "1.2.0",
         "author": "SirJain",
-        "link": "https://github.com/SirJain0/Blockmorphism" 
+        "link": "https://github.com/SirJain0/Blockmorphism",
+        "tag": "Theme"
     },
     {
         "name": "Minecraft Text Generator",
         "description": "Generates Minecraft-styled text in cubes.",
         "version": "2.0.0",
         "author": "SirJain",
-        "link": "https://blockbench.net/plugins/mc_text_generator" 
+        "link": "https://blockbench.net/plugins/mc_text_generator",
+        "tag": "Plugin" 
     }
 ]
 
@@ -30,25 +32,17 @@ for (const project of projects) {
     div.innerHTML = 
     `
         <div class="project-header">
-            <div class="box">
-                <h2 class="project-title">${project.name}</h2>
-            </div>
-
-            <div class="box2">
-                <h3 class="project-version">${project.version}</h3>
-            </div>
+            <h3 class="project-title">${project.name}</h2>
+            <a class="project-link" href="${project.link}" target="_blank">
+                <span class="material-symbols-outlined">open_in_new</span>
+            </a>
         </div>
-
-        <div>
-            <p class="project-authors">By: ${project.author}</p>
-        </div>
-
-        <div>
-            <p class="project-description">${project.description}</p>
-        </div>
-
-        <div class="links">
-            <a class="project-link" href="${project.link}">Official Link</a>
+        <p class="project-authors"><b>By:</b> ${project.author}</p>
+        <p class="project-description">${project.description}</p>
+        <div class="spacer"></div>
+        <div class="project-footer">
+            <span class="project-version">Version: ${project.version}</span>
+            <span class="project-${project.tag}-tag">${project.tag}</span>
         </div>
     `;
 
@@ -65,28 +59,21 @@ for (const [id, plugin] of plugins) {
     const div = document.createElement("bb-project");
     div.className = "bb-project";
     div.classList.add("project-view");
+
     div.innerHTML = 
     `
         <div class="project-header">
-            <div class="box">
-                <h2 class="project-title">${plugin.title}</h2>
-            </div>
-
-            <div class="box2">
-                <h3 class="project-version">${plugin.version}</h3>
-            </div>
+            <h3 class="project-title">${plugin.name}</h2>
+            <a class="project-link" href="${plugin.link}" target="_blank">
+                <span class="material-symbols-outlined">open_in_new</span>
+            </a>
         </div>
-
-        <div>
-            <p class="project-authors">By: ${plugin.author}</p>
-        </div>
-
-        <div>
-            <p class="project-description">${plugin.description}</p>
-        </div>
-
-        <div class="links">
-            <a class="project-link" href="http://www.blockbench.net/plugins/${pluginID}">Official Link</a>
+        <p class="project-authors"><b>By:</b> ${plugin.author}</p>
+        <p class="project-description">${plugin.description}</p>
+        <div class="spacer"></div>
+        <div class="project-footer">
+            <span class="project-version">Version: ${plugin.version}</span>
+            <span class="project-plugin-tag">Plugin</span>
         </div>
     `;
 
