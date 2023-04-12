@@ -33,8 +33,6 @@ const projects = [
     }
 ]
 
-const modTaggedProjects = ["Throwable Fluids", "Extensive Diamonds", "Convenient Hitboxes", "Tiramisu"]
-
 // Get the project-list element
 const projectList = document.getElementById("project-list");
 
