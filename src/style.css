@@ -27,6 +27,8 @@ body {
 
 .project-header {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .project-title {
@@ -84,7 +86,6 @@ body {
     color: #279f77;
 }
 
-
 .project-description {
     color: #adadad;
     line-height: 24px;
@@ -96,16 +97,13 @@ body {
 .project-link {
     color: #3f8bee;
     text-decoration: none;
-    float: right;
-    margin: 20px;
-    margin-top: -50px;
+    margin: 30px 20px 20px 20px;
 }
 
 .project-footer {
     display: flex;
-    bottom: 0px;
     justify-content: space-between;
-    margin: 50px 20px;
+    margin: 50px 20px 20px 20px;
 }
 
 .spacer {
@@ -124,11 +122,12 @@ body {
 }
 
 .project-view {
-    height: 280px;
     background-color: var(--translucent-bg-color);
     margin: 18px;
     border-radius: 20px;
     color: #ADADAD;
+    display: flex;
+    flex-direction: column;
 }
 
 .back-button {
@@ -344,7 +343,7 @@ input:focus {
     }
     
     #view-projects-view {
-        grid-template-columns: 30% 30%;
+        grid-template-columns: 40% 40%;
     }
 
     .project-title {

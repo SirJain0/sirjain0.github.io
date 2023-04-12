@@ -30,6 +30,7 @@ for (const view of views) {
             <p class="project-card-title">${view.title}</p>
         </div>
         <p class="project-description" style="text-align: center;">${view.description}</p>
+        <div class="spacer"></div>
         <div class="project-card-button-div">
             <a href="${view.path}">
                 <button class="project-card-button">View Projects</button>
