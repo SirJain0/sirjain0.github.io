@@ -42,7 +42,7 @@ for (const project of projects) {
         <div class="spacer"></div>
         <div class="project-footer">
             <span class="project-version">Version: ${project.version}</span>
-            <span class="project-${project.tag.toLowerCase()}-tag">${project.tag}</span>
+            <span class="project-tag ${project.tag.toLowerCase()}-tag">${project.tag}</span>
         </div>
     `;
 
@@ -73,7 +73,7 @@ for (const [id, plugin] of plugins) {
         <div class="spacer"></div>
         <div class="project-footer">
             <span class="project-version">Version: ${plugin.version}</span>
-            <span class="project-plugin-tag">Plugin</span>
+            <span class=" project-tag plugin-tag">Plugin</span>
         </div>
     `;
 

@@ -57,40 +57,31 @@ body {
     margin-bottom: -2px;
 }
 
-.project-mod-tag {
+.project-tag {
     margin-top: -10px;
-    padding: 9px 12px;
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.mod-tag {
     border:#708f28 2px solid;
-    border-radius: 20px;
     color: #708f28;
-    font-size: 14px;
 }
 
-.project-plugin-tag {
-    margin-top: -10px;
-    padding: 9px 12px;
+.plugin-tag {
     border:#ac3356 2px solid;
-    border-radius: 20px;
     color: #ac3356;
-    font-size: 14px;
 }
 
-.project-theme-tag {
-    margin-top: -10px;
-    padding: 9px 12px;
+.theme-tag {
     border:#9f6527 2px solid;
-    border-radius: 20px;
     color: #9f6527;
-    font-size: 14px;
 }
 
-.project-website-tag {
-    margin-top: -10px;
-    padding: 9px 12px;
+.website-tag {
     border:#279f77 2px solid;
-    border-radius: 20px;
     color: #279f77;
-    font-size: 14px;
 }
 
 
