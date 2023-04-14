@@ -95,7 +95,7 @@ body {
 .project-link {
     color: #3f8bee;
     text-decoration: none;
-    margin: 30px 20px 20px 20px;
+    margin: 25px 20px 20px 20px;
 }
 
 .project-footer {
@@ -338,10 +338,15 @@ input:focus {
 
 /* Tablets */
 @media only screen and (min-width: 767px) {
-    /* Make page titles smaller if on smaller devices */
     #project-list {
         display: grid;
         grid-template-columns: 50% 50%;
+    }
+
+    .project-link {
+        color: #3f8bee;
+        text-decoration: none;
+        margin: 30px 20px 20px 20px;
     }
 
     .back-button {
