@@ -19,7 +19,6 @@ body {
 }
 
 .divider {
-    margin: 20px 20px;
     background-color: #454545;
     border: none;
     height: 1px;
@@ -122,7 +121,7 @@ body {
 
 .project-view {
     background-color: var(--translucent-bg-color);
-    margin: 18px;
+    margin: 18px -10px;
     border-radius: 20px;
     color: #ADADAD;
     display: flex;
@@ -130,7 +129,7 @@ body {
 }
 
 .back-button {
-    margin-left: 20px; 
+    margin-left: 0px; 
     font-family: 'Poppins'; 
     font-size: 18px;
 }
@@ -344,6 +343,10 @@ input:focus {
         display: grid;
         grid-template-columns: 50% 50%;
     }
+
+    .back-button {
+        margin-left: 20px;
+    }
     
     #view-projects-view {
         grid-template-columns: 40% 40%;
@@ -371,6 +374,11 @@ input:focus {
         font-size: 40px;
     }
 
+    .project-view {
+        width: 92%;
+        margin: 18px;
+    }
+
     .social {
         border-radius: 20px;
         margin: 10px 20px;
@@ -378,6 +386,10 @@ input:focus {
         transition: transform 0.2s;
         width: 55px;
         height: 55px;
+    }
+
+    .divider {
+        margin: 20px;
     }
 }
 
