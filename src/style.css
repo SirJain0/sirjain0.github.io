@@ -185,9 +185,11 @@ body {
 
 .social {
     border-radius: 20px;
-    margin: 10px 20px;
+    margin: 10px 15px;
     box-shadow: 0px 7px 20px rgba(0, 0, 0, .3);
     transition: transform 0.2s;
+    width: 45px;
+    height: 45px;
 }
 
 .social:hover {
@@ -365,6 +367,15 @@ input:focus {
 
     .pg-title {
         font-size: 40px;
+    }
+
+    .social {
+        border-radius: 20px;
+        margin: 10px 20px;
+        box-shadow: 0px 7px 20px rgba(0, 0, 0, .3);
+        transition: transform 0.2s;
+        width: 55px;
+        height: 55px;
     }
 }
 
