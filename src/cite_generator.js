@@ -9,7 +9,7 @@ const url = document.getElementById("url");
 const generateButton = document.getElementById("generate");
 const outputText = document.getElementById("output-text");
 
-let citation, allFieldsEmpty;
+let citation, citationCleaned, allFieldsEmpty;
 
 // Check for the filler gray text and change the style appropriately
 if (outputText.innerHTML === "Result will be shown here.") {
@@ -35,15 +35,21 @@ function writeValues() {
         if (firstName.value != "") citation += firstName.value;
         if (lastName.value != "" || firstName.value != "") citation += ". "
         if (date.value != "") citation += `(${date.value})` + ". ";
-        if (articleTitle.value != "") citation += `<i>${articleTitle.value}</i>` + ". ";
+        if (articleTitle.value != "") citation += `<i>${articleTitle.value}</i>` + ". "; // Italic
         if (publicationName.value != "") citation += publicationName.value + ". ";
-        if (url.value != "") citation += `<br>${url.value}`;
+        if (url.value != "") citation += `<b>${url.value}</b>`; // Bold
 
-        outputText.style.setProperty("color", "white");
         outputText.innerHTML = citation;
-    }
+        outputText.style.setProperty("color", "white");
 
-    copyTextToClipboard(citation);
+        citationCleaned = citation
+            .replaceAll("<b>", "")
+            .replaceAll("<i>", "")
+            .replaceAll("</b>", "")
+            .replaceAll("</i>", "");
+
+        copyTextToClipboard(citationCleaned);
+    }
 }
 
 // Copies text to clipboard
