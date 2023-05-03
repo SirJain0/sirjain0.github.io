@@ -37,7 +37,7 @@ function writeValues() {
         if (date.value != "") citation += `(${date.value})` + ". ";
         if (articleTitle.value != "") citation += `<i>${articleTitle.value}</i>` + ". "; // Italic
         if (publicationName.value != "") citation += publicationName.value + ". ";
-        if (url.value != "") citation += `<b>${url.value}</b>`; // Bold
+        if (url.value != "") citation += `<br><b>${url.value}</b>`; // Bold
 
         outputText.innerHTML = citation;
         outputText.style.setProperty("color", "white");
@@ -46,7 +46,8 @@ function writeValues() {
             .replaceAll("<b>", "")
             .replaceAll("<i>", "")
             .replaceAll("</b>", "")
-            .replaceAll("</i>", "");
+            .replaceAll("</i>", "")
+            .replaceAll("<br>", "");
 
         copyTextToClipboard(citationCleaned);
     }
