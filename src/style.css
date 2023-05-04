@@ -237,28 +237,37 @@ body {
 button {
     font-weight: 200;
     display: inline-block;
-    background-image: linear-gradient(
-        45deg, 
-        #CA2CC7, 
-        #465FDF
-    );
     padding: 15px 25px;
     text-decoration: none;
-    color: white;
     font-weight: 100;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     margin: 40px 20px 20px;
+    border: none;
     transition: transform 0.2s;
     position: relative;
-    border: none;
     font-family: 'Poppins';
     font-size: 16px;
     cursor: pointer;
 }
 
-.project-card-button:hover {
+.project-card-button {
+    background-image: linear-gradient(
+        45deg, 
+        #CA2CC7, 
+        #465FDF
+    );
+    color: white;
+}
+
+button:hover {
     transform: scale(1.05)
+}
+
+#clear {
+    outline: #f44336 1px solid;
+    color: red;
+    background: none;
 }
 
 #output-text {

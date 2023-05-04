@@ -2,7 +2,7 @@ const projects = [
     {
         "name": "Cite Generator",
         "description": "A small tool that allows you to generate a citation for a website (following the APA formatting)!",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "author": "SirJain",
         "link": "../tools/cite_generator/index.html" ,
         "tag": "Website"

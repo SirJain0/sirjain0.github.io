@@ -7,6 +7,7 @@ const publicationName = document.getElementById("publication-name");
 const url = document.getElementById("url");
 
 const generateButton = document.getElementById("generate");
+const clearButton = document.getElementById("clear");
 const outputText = document.getElementById("output-text");
 
 let citation, citationCleaned, allFieldsEmpty;
@@ -53,10 +54,21 @@ function writeValues() {
     }
 }
 
+// Clears all values of inputs
+function clearValues() {
+    lastName.value = "";
+    firstName.value = "";
+    publicationName.value = "";
+    date.value = "";
+    articleTitle.value = "";
+    url.value = "";
+}
+
 // Copies text to clipboard
 function copyTextToClipboard(value) {
     navigator.clipboard.writeText(value);
 }
 
-// Event listener to check if the button is clicked
+// Event listener to check if buttons are clicked
 generateButton.addEventListener('click', writeValues);
+clearButton.addEventListener('click', clearValues);
