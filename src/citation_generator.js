@@ -62,6 +62,9 @@ function clearValues() {
     date.value = "";
     articleTitle.value = "";
     url.value = "";
+
+    outputText.innerHTML = "Result will be shown here.";
+    outputText.style.setProperty("color", "gray");
 }
 
 // Copies text to clipboard
