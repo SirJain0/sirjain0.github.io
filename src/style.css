@@ -162,7 +162,7 @@ body {
 }
 
 #socials {
-    background-color: rgba(100, 100, 200, 0.15);
+    background-color: var(--translucent-bg-color);
     padding: 10px;
     border-radius: 20px;
     margin: 20px 0px 20px 20px;
@@ -275,7 +275,7 @@ button:hover {
 }
 
 .output-container {
-    background:rgba(100, 100, 100, .1);
+    background:var(--translucent-bg-color);
     padding: 20px;
     border-radius: 20px;
     width: 65%;
@@ -306,7 +306,7 @@ button:hover {
     width: 65%;
     justify-content: center;
     flex-direction: column;
-    background:rgba(100, 100, 100, .1);
+    background: var(--translucent-bg-color);
     border-radius: 20px;
     padding: 20px;
     margin-top: 60px;

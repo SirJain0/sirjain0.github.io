@@ -12,7 +12,7 @@ const views = [
     {
         "title": "Miscellaneous Tools",
         "description": "This is where I showcase some miscellaneous utility tools I've made which don't fall into other categories.<br><br>",
-        "path": "tools_projects/index.html"
+        "path": "misc_tools/index.html"
     }
 ]
 
