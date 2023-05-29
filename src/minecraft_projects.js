@@ -30,6 +30,14 @@ const projects = [
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/tiramisu/",
         "tag": "Mod" 
+    },
+    {
+        "name": "Perfect Plushies",
+        "description": "Adds various plushies with different perks to Minecraft, along with some Easter Eggs!",
+        "version": "1.0.0",
+        "author": "SirJain",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
+        "tag": "Mod" 
     }
 ]
 
