@@ -53,7 +53,7 @@ for (const project of projects) {
 for (const [id, plugin] of plugins) {
     let pluginID = plugin.title.toLowerCase().replaceAll(" ", "_");
 
-    // Skip over MC Text Generator and Outline Creator
+    // Skip over MC Text Generator
     if (plugin.title === "Minecraft Text Generator") continue;
 
     const div = document.createElement("bb-project");
