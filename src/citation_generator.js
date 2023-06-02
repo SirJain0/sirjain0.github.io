@@ -10,10 +10,13 @@ const generateButton = document.getElementById("generate");
 const clearButton = document.getElementById("clear");
 const outputText = document.getElementById("output-text");
 
+const emptyFieldStr = "Result will be shown here.";
+const errorStr = "Please fill out some fields.";
+
 let citation, citationCleaned, allFieldsEmpty;
 
 // Check for the filler gray text and change the style appropriately
-if (outputText.innerHTML === "Result will be shown here.") {
+if (outputText.innerHTML === emptyFieldStr) {
     outputText.style.setProperty("color", "gray");
 }
 
@@ -24,9 +27,9 @@ function writeValues() {
 
     // Check - is there input in the fields?
     if (allFieldsEmpty) {
-        outputText.innerHTML = `Please fill out some fields.`;
+        outputText.innerHTML = errorStr;
         outputText.style.setProperty("color", "#F45555");
-        alert("Please fill out some fields.");
+        alert(errorStr);
     }
 
     // Run if everything is okay
@@ -63,7 +66,7 @@ function clearValues() {
     articleTitle.value = "";
     url.value = "";
 
-    outputText.innerHTML = "Result will be shown here.";
+    outputText.innerHTML = emptyFieldStr;
     outputText.style.setProperty("color", "gray");
 }
 
