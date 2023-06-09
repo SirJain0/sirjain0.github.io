@@ -26,7 +26,7 @@ const projects = [
     {
         "name": "Tiramisu",
         "description": "Mod that adds bitesized and full tiramisu to Minecraft!",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/tiramisu/",
         "tag": "Mod" 
