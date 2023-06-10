@@ -108,6 +108,7 @@ body {
     padding: 15px 15px 10px 15px;
     border-radius: 15px;
     transition: all .1s;
+    max-height: 30px;
 }
 
 .project-link:hover {

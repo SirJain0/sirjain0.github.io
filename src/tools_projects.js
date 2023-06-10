@@ -22,6 +22,7 @@ for (const project of projects) {
     `
         <div class="project-header">
             <h3 class="project-title">${project.name}</h2>
+            <div class="spacer"></div>
             <a class="project-link" href="${project.link}">
                 <span class="material-symbols-outlined">open_in_new</span>
             </a>
