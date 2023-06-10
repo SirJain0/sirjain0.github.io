@@ -5,6 +5,7 @@ const projects = [
         "version": "1.0.5",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/extensive-diamonds/",
+        "translation": "https://poeditor.com/join/project/rUCEF9wpEF",
         "tag": "Mod"
     },
     {
@@ -13,6 +14,7 @@ const projects = [
         "version": "1.1.3",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/throwable-fluids/",
+        "translation": "https://poeditor.com/join/project/M4owFigkSJ",
         "tag": "Mod" 
     },
     {
@@ -21,6 +23,7 @@ const projects = [
         "version": "1.0.3",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/convenient-hitboxes/",
+        "translation": "https://poeditor.com/join/project/54SbKsj4o6",
         "tag": "Mod"
     },
     {
@@ -29,6 +32,7 @@ const projects = [
         "version": "1.0.1",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/tiramisu/",
+        "translation": "https://poeditor.com/join/project/RXfhCAd7Hp",
         "tag": "Mod" 
     },
     {
@@ -37,6 +41,7 @@ const projects = [
         "version": "1.0.0",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
+        "translation": "https://poeditor.com/join/project/BLsW0V1qtn",
         "tag": "Mod" 
     }
 ]
@@ -54,6 +59,10 @@ for (const project of projects) {
     `
         <div class="project-header">
             <h3 class="project-title">${project.name}</h2>
+            <div class="spacer"></div>
+            <a class="project-link" style="margin-right: -5px;" href="${project.translation}" target="_blank">
+                <span class="material-symbols-outlined">language</span>
+            </a>
             <a class="project-link" href="${project.link}" target="_blank">
                 <span class="material-symbols-outlined">open_in_new</span>
             </a>

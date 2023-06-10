@@ -6,6 +6,8 @@
     --gradient-color-1: #fb41f8;
     --gradient-color-2: #7c78ff;
     --translucent-bg-color: rgba(116, 113, 142, 0.1);
+    --translucent-bg-color-2: rgba(116, 113, 142, 0.15);
+    --translucent-bg-color-3: rgba(116, 113, 142, 0.2);
 }
 
 html {
@@ -26,7 +28,7 @@ body {
 
 .project-header {
     display: flex;
-    justify-content: space-between;
+    margin-top: -10px;
 }
 
 .project-title {
@@ -38,6 +40,7 @@ body {
     hyphens: manual;
     font-size: 20px;
     margin-left: 20px;
+    margin-top: 38px;
 }
 
 .project-card-title {
@@ -95,7 +98,17 @@ body {
 .project-link {
     color: #3f8bee;
     text-decoration: none;
-    margin: 25px 20px 20px 20px;
+    margin: 25px 20px 0px 20px;
+    background-color: var(--translucent-bg-color-2);
+    padding: 15px 15px 10px 15px;
+    border-radius: 15px;
+    transition: all .1s;
+    max-height: 30px;
+}
+
+.project-link:hover {
+    background-color: var(--translucent-bg-color-3);
+    border-radius: 10px;
 }
 
 .project-footer {
