@@ -55,6 +55,9 @@ for (const project of projects) {
         <div class="project-header">
             <h3 class="project-title">${project.name}</h2>
             <a class="project-link" href="${project.link}" target="_blank">
+                <span class="material-symbols-outlined">language</span>
+            </a>
+            <a class="project-link" href="${project.link}" target="_blank">
                 <span class="material-symbols-outlined">open_in_new</span>
             </a>
         </div>
