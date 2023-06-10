@@ -38,7 +38,7 @@ const projects = [
     {
         "name": "Perfect Plushies",
         "description": "Adds various plushies with different perks to Minecraft, along with some Easter Eggs!",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
         "translation": "https://poeditor.com/join/project/BLsW0V1qtn",
