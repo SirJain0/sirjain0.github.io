@@ -18,7 +18,7 @@ const projects = [
     {
         "name": "Convenient Hitboxes",
         "description": "Mod that adds a button toggling entity hitbox visibility, having the same functionality as F3+B.",
-        "version": "1.0.2",
+        "version": "1.0.3",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/convenient-hitboxes/",
         "tag": "Mod"
