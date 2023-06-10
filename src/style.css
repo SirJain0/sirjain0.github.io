@@ -345,6 +345,26 @@ input:focus {
     justify-content: center;
 }
 
+/* Scrollbar handling */
+::-webkit-scrollbar {
+    width: 15px;
+    padding-left: -10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--translucent-bg-color); 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(116, 113, 142, 0.14);
+    border-radius: 10px;
+}
+
 /* Tablets */
 @media only screen and (min-width: 767px) {
     #project-list {
