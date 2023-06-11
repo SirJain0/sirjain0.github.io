@@ -93,6 +93,7 @@ body {
     margin: 0px 20px;
     max-width: 400px;
     font-weight: 300;
+    padding-top: 5px;
 }
 
 .project-link {
@@ -195,7 +196,7 @@ body {
     position: relative;
     color: gray;
     margin: 20px;
-    margin-top: -1px;
+    margin-top: -20px;
 }
 
 .social {
