@@ -139,6 +139,27 @@ body {
     color: #ADADAD;
     display: flex;
     flex-direction: column;
+    animation: project-ease-in 1000ms ease-out;
+}
+
+@keyframes project-ease-in {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(-3%);
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 50;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100;
+    }
 }
 
 .back-button {
@@ -165,6 +186,20 @@ body {
     font-size: 60px;
     width: 100%;
     text-align: center;
+
+    animation: title-text-anim 1000ms ease-out;
+}
+
+@keyframes title-text-anim {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100;
+    }
 }
 
 #description {
@@ -238,6 +273,52 @@ body {
     border-radius: 20px;
     padding: 10px 20px;
 }
+
+.view-project-card:nth-child(2) {
+    animation: title-card-ease-in 1200ms ease-in-out;
+}
+
+.view-project-card:nth-child(1) {
+    opacity: 0;
+    transform: translateY(-3%);
+    animation: title-card-side-ease-in 1400ms ease-in-out 350ms;
+    animation-fill-mode: forwards;
+}
+
+.view-project-card:nth-child(3) {
+    opacity: 0;
+    transform: translateY(-3%);
+    animation: title-card-side-ease-in 1400ms ease-in-out 350ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes title-card-ease-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-3%);
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes title-card-side-ease-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-3%);
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateY(0%);
+    }
+}
+
 
 .project-card-title {
     display: inline-block;

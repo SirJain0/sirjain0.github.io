@@ -23,6 +23,7 @@ const projects = [
 
 // Get the project-list element
 const projectList = document.getElementById("project-list");
+let animDelay = 0;
 
 for (const project of projects) {
     const div = document.createElement("bb-project");
@@ -48,6 +49,13 @@ for (const project of projects) {
     `;
 
     projectList.append(div)
+    div.style.cssText += `
+        transform: translateY(-3%);
+        opacity: 0;
+        animation:project-ease-in 1000ms ease-out ${animDelay}ms;
+        animation-fill-mode: forwards;
+    `;
+    animDelay += 120;
 }
 
 // Iterate and display each project
@@ -79,5 +87,12 @@ for (const [id, plugin] of plugins) {
         </div>
     `;
 
-    projectList.append(div)
+    projectList.append(div);
+    div.style.cssText += `
+        transform: translateY(-3%);
+        opacity: 0;
+        animation:project-ease-in 1000ms ease-out ${animDelay}ms;
+        animation-fill-mode: forwards;
+    `;
+    animDelay += 120;
 }
