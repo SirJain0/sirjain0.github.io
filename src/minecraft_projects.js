@@ -11,7 +11,7 @@ const projects = [
     {
         "name": "Throwable Fluids",
         "description": "Mod that adds throwable lava, throwable water, and more!",
-        "version": "1.1.3",
+        "version": "1.1.4",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/throwable-fluids/",
         "translation": "https://poeditor.com/join/project/M4owFigkSJ",
