@@ -275,10 +275,10 @@ button {
     text-decoration: none;
     font-weight: 100;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
+    border-radius: 40px;
     margin: 40px 20px 20px;
     border: none;
-    transition: transform 0.2s;
+    transition: transform 0.2s, border-radius 0.2s;
     position: relative;
     font-family: 'Poppins';
     font-size: 16px;
@@ -295,7 +295,8 @@ button {
 }
 
 button:hover {
-    transform: scale(1.05)
+    transform: scale(1.03);
+    border-radius: 20px;
 }
 
 #clear {
