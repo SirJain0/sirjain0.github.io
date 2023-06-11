@@ -139,6 +139,27 @@ body {
     color: #ADADAD;
     display: flex;
     flex-direction: column;
+    animation: project-ease-in 1000ms ease-out;
+}
+
+@keyframes project-ease-in {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(-3%);
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 50;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100;
+    }
 }
 
 .back-button {
