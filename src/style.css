@@ -274,6 +274,49 @@ body {
     padding: 10px 20px;
 }
 
+.view-project-card:nth-child(2) {
+    animation: title-card-ease-in 1200ms ease-in-out;
+}
+
+.view-project-card:nth-child(1) {
+    animation: title-card-side-ease-in 1400ms ease-in-out;
+}
+
+.view-project-card:nth-child(3) {
+    animation: title-card-side-ease-in 1400ms ease-in-out;
+}
+
+@keyframes title-card-ease-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-3%);
+    }
+
+    70% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes title-card-side-ease-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-3%);
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+
 .project-card-title {
     display: inline-block;
     background: -webkit-linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
