@@ -78,3 +78,29 @@ function copyTextToClipboard(value) {
 // Event listener to check if buttons are clicked
 generateButton.addEventListener('click', writeValues);
 clearButton.addEventListener('click', clearValues);
+
+// Animation handling
+const description = document.querySelector(".tool-page-description");
+const inputContainer = document.querySelector(".cite-generator-container");
+const outputContainer = document.querySelector(".output-container");
+
+description.style.cssText += `
+    transform: translateY(-3%);
+    opacity: 0;
+    animation: project-ease-in 1000ms ease-out 150ms;
+    animation-fill-mode: forwards;
+`;
+
+inputContainer.style.cssText += `
+    transform: translateY(-3%);
+    opacity: 0;
+    animation: project-ease-in 1000ms ease-out 150ms;
+    animation-fill-mode: forwards;
+`;
+
+outputContainer.style.cssText += `
+    transform: translateY(-3%);
+    opacity: 0;
+    animation:project-ease-in 1000ms ease-out 300ms;
+    animation-fill-mode: forwards;
+`;

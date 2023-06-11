@@ -127,6 +127,7 @@ body {
     font-size: 28px;
     width: 100%;
     text-align: center;
+    padding-top: 40px;
 }
 
 #project-list {
@@ -305,10 +306,12 @@ button:hover {
     outline: #f44336 1px solid;
     color: red;
     background: none;
+    margin-bottom: -20px;
 }
 
 #output-text {
     color: white;
+    font-size: 14px;
 }
 
 .output-container {
@@ -441,8 +444,13 @@ input:focus {
         font-size: 20px;
     }
 
+    #output-text {
+        font-size: 16px;
+    }
+
     .pg-title {
         font-size: 40px;
+        padding-top: 0px;
     }
 
     .project-view {
@@ -461,6 +469,11 @@ input:focus {
 
     .divider {
         margin: 20px;
+    }
+
+    #clear {
+        margin-right: -6px;
+        margin-bottom: 0px;
     }
 }
 
