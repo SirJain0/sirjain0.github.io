@@ -281,14 +281,14 @@ body {
 .view-project-card:nth-child(1) {
     opacity: 0;
     transform: translateY(-3%);
-    animation: title-card-side-ease-in 1400ms ease-in-out 350ms;
+    animation: title-card-side-ease-in 1400ms ease-in-out 200ms;
     animation-fill-mode: forwards;
 }
 
 .view-project-card:nth-child(3) {
     opacity: 0;
     transform: translateY(-3%);
-    animation: title-card-side-ease-in 1400ms ease-in-out 350ms;
+    animation: title-card-side-ease-in 1400ms ease-in-out 200ms;
     animation-fill-mode: forwards;
 }
 
