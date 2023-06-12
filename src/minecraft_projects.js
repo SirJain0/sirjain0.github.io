@@ -2,7 +2,7 @@ const projects = [
     {
         "name": "Extensive Diamonds",
         "description": "Mod that adds three new diamond types to Minecraft!",
-        "version": "1.0.5",
+        "version": "1.1.0",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/extensive-diamonds/",
         "translation": "https://poeditor.com/join/project/rUCEF9wpEF",
@@ -20,7 +20,7 @@ const projects = [
     {
         "name": "Convenient Hitboxes",
         "description": "Mod that adds a button toggling entity hitbox visibility, having the same functionality as F3+B.",
-        "version": "1.0.3",
+        "version": "1.0.4",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/convenient-hitboxes/",
         "translation": "https://poeditor.com/join/project/54SbKsj4o6",
