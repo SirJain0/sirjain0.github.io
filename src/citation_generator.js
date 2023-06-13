@@ -29,7 +29,6 @@ function writeValues() {
     if (allFieldsEmpty) {
         outputText.innerHTML = errorStr;
         outputText.style.setProperty("color", "#F45555");
-        alert(errorStr);
     }
 
     // Run if everything is okay
