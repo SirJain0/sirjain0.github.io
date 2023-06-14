@@ -10,9 +10,9 @@ const views = [
         "path": "minecraft_projects/index.html"
     },
     {
-        "title": "Miscellaneous Tools",
-        "description": "This is where I showcase some miscellaneous utility tools I've made which don't fall into other categories.<br><br>",
-        "path": "misc_tools/index.html"
+        "title": "Miscellaneous",
+        "description": "This is where I showcase some miscellaneous projects I've made which don't fall into other categories.<br><br>",
+        "path": "misc/index.html"
     }
 ]
 
