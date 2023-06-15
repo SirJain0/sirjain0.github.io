@@ -5,12 +5,12 @@ const projects = [
         "version": "1.0.3",
         "author": "SirJain",
         "link": "../tools/citation_generator/index.html" ,
-        "tag": "Website"
+        "tag": "Web Page"
     }
 ]
 
 // Get the project-list element
-const projectList = document.getElementById("project-list")
+const projectList = document.getElementById("project-list");
 
 // Iterate and display each project
 for (const project of projects) {
@@ -32,7 +32,7 @@ for (const project of projects) {
         <div class="spacer"></div>
         <div class="project-footer">
             <span class="project-version">Version: ${project.version}</span>
-            <span class="project-tag ${project.tag.toLowerCase()}-tag">${project.tag}</span>
+            <span class="project-tag ${project.tag.toLowerCase().replaceAll(" ", "-")}-tag">${project.tag}</span>
         </div>
     `;
 
