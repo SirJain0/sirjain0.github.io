@@ -83,23 +83,16 @@ const description = document.querySelector(".tool-page-description");
 const inputContainer = document.querySelector(".cite-generator-container");
 const outputContainer = document.querySelector(".output-container");
 
-description.style.cssText += `
-    transform: translateY(-3%);
-    opacity: 0;
-    animation: project-ease-in 1000ms ease-out 150ms;
-    animation-fill-mode: forwards;
-`;
+animate(description, 150)
+animate(inputContainer, 220);
+animate(outputContainer, 330);
 
-inputContainer.style.cssText += `
-    transform: translateY(-3%);
-    opacity: 0;
-    animation: project-ease-in 1000ms ease-out 150ms;
-    animation-fill-mode: forwards;
-`;
-
-outputContainer.style.cssText += `
-    transform: translateY(-3%);
-    opacity: 0;
-    animation:project-ease-in 1000ms ease-out 300ms;
-    animation-fill-mode: forwards;
-`;
+// Function handling animation
+function animate(container, delay) {
+    container.style.cssText += `
+        transform: translateY(-3%);
+        opacity: 0;
+        animation:project-ease-in 1000ms ease-out ${delay}ms;
+        animation-fill-mode: forwards;
+    `;
+}

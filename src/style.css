@@ -318,7 +318,7 @@ button:hover {
     background:var(--translucent-bg-color);
     padding: 20px;
     border-radius: 20px;
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
@@ -343,7 +343,7 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 65%;
+    width: 80%;
     justify-content: center;
     flex-direction: column;
     background: var(--translucent-bg-color);
@@ -358,16 +358,19 @@ input {
     padding: 20px;
     border-radius: 20px;
     border: rgba(0, 0, 0, 0);
+    outline: rgba(0, 0, 0, 0);
     background-color: rgba(100, 100, 100, .2);
     font-family: 'Poppins';
     color: white;
-    transition: border 0.1s;
+    transition: outline 0.1s, transform 0.1s;
+    transform: scale(1);
 }
 
 input:focus {
-    outline:none;
-    border: 1px solid #CA2CC7;
+    outline: 1px solid #CA2CC7;
+    border: rgba(0, 0, 0, 0);
     border-radius: 20px;
+    transform: scale(1.02);
 }
 
 #form-container {
