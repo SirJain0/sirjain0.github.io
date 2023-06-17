@@ -2,7 +2,7 @@ const projects = [
     {
         "name": "Extensive Diamonds",
         "description": "Mod that adds three new diamond types to Minecraft!",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/extensive-diamonds/",
         "translation": "https://poeditor.com/join/project/rUCEF9wpEF",
