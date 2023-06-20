@@ -495,7 +495,7 @@ input:focus {
         inline-size: 300px;
         word-break: break-all;
         hyphens: manual;
-        font-size: 24px;
+        font-size: 22px;
     }
 
     #form-container {
