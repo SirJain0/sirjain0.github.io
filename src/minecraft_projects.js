@@ -47,7 +47,7 @@ const projects = [
     {
         "name": "Herespawn",
         "description": "Adds a button to the death screen which respawns player to death location.",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/herespawn/",
         "translation": "https://poeditor.com/join/project/m39omifByK",
