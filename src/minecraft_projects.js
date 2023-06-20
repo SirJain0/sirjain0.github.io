@@ -43,6 +43,15 @@ const projects = [
         "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
         "translation": "https://poeditor.com/join/project/BLsW0V1qtn",
         "tag": "Mod" 
+    },
+    {
+        "name": "Herespawn",
+        "description": "Adds a button to the death screen which respawns player to death location.",
+        "version": "1.0.0",
+        "author": "SirJain",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/herespawn/",
+        "translation": "https://poeditor.com/join/project/m39omifByK",
+        "tag": "Mod" 
     }
 ]
 
