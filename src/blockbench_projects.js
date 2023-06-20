@@ -94,5 +94,5 @@ for (const [id, plugin] of plugins) {
         animation:project-ease-in 1000ms ease-out ${animDelay}ms;
         animation-fill-mode: forwards;
     `;
-    animDelay += 120;
+    animDelay += 80;
 }
