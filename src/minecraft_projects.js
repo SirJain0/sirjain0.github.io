@@ -11,7 +11,7 @@ const projects = [
     {
         "name": "Throwable Fluids",
         "description": "Mod that adds throwable lava, throwable water, and more!",
-        "version": "1.1.4",
+        "version": "1.1.5",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/throwable-fluids/",
         "translation": "https://poeditor.com/join/project/M4owFigkSJ",
@@ -20,7 +20,7 @@ const projects = [
     {
         "name": "Convenient Hitboxes",
         "description": "Mod that adds a button toggling entity hitbox visibility, having the same functionality as F3+B.",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/convenient-hitboxes/",
         "translation": "https://poeditor.com/join/project/54SbKsj4o6",
@@ -29,7 +29,7 @@ const projects = [
     {
         "name": "Tiramisu",
         "description": "Mod that adds bitesized and full tiramisu to Minecraft!",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/tiramisu/",
         "translation": "https://poeditor.com/join/project/RXfhCAd7Hp",
@@ -38,7 +38,7 @@ const projects = [
     {
         "name": "Perfect Plushies",
         "description": "Adds various plushies with different perks to Minecraft, along with some Easter Eggs!",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
         "translation": "https://poeditor.com/join/project/BLsW0V1qtn",
