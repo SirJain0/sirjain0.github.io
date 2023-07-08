@@ -4,13 +4,14 @@ const projects = [
         "description": "A small tool that allows you to generate a citation for a website (following the APA formatting)!",
         "version": "1.0.3",
         "author": "SirJain",
-        "link": "../tools/citation_generator/index.html" ,
+        "link": "../tools/citation_generator/index.html",
         "tag": "Web Page"
     }
 ]
 
 // Get the project-list element
 const projectList = document.getElementById("project-list");
+let animDelay = 0;
 
 // Iterate and display each project
 for (const project of projects) {
@@ -37,4 +38,11 @@ for (const project of projects) {
     `;
 
     projectList.append(div)
+    div.style.cssText += `
+        transform: translateY(-3%);
+        opacity: 0;
+        animation:project-ease-in 1000ms ease-out ${animDelay}ms;
+        animation-fill-mode: forwards;
+    `;
+    animDelay += 80;
 }
