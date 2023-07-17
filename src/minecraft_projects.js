@@ -55,12 +55,17 @@ const projects = [
     }
 ]
 
+const searchBar = document.getElementById("minecraft-searchbox");
+let displayedProjects = [];
+
+if (searchBar.value == "") displayedProjects = projects;
+
 // Get the project-list element
 const projectList = document.getElementById("project-list");
 let animDelay = 0;
 
 // Iterate and display each project
-for (const project of projects) {
+for (const project of displayedProjects) {
     const div = document.createElement("bb-project");
     div.className = "bb-project";
     div.classList.add("project-view");
