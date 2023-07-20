@@ -33,7 +33,7 @@ for (const project of projects) {
         <div class="spacer"></div>
         <div class="project-footer">
             <span class="project-version">Version: ${project.version}</span>
-            <span class="project-tag ${project.tag.toLowerCase().replaceAll(" ", "-")}-tag">${project.tag}</span>
+            <span class="project-tag">${project.tag}</span>
         </div>
     `;
 

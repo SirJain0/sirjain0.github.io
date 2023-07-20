@@ -57,34 +57,14 @@ body {
     position: relative;
     color: gray;
     font-size: 16px;
-    margin-bottom: -2px;
 }
 
 .project-tag {
-    margin-top: -10px;
-    padding: 8px 10px;
-    font-size: 14px;
-    border-radius: 20px;
-}
-
-.mod-tag {
-    border:#708f28 2px solid;
-    color: #708f28;
-}
-
-.plugin-tag {
-    border:#d62e5e 2px solid;
-    color: #d62e5e;
-}
-
-.theme-tag {
-    border:#dc7e2b 2px solid;
-    color: #dc7e2b;
-}
-
-.web-page-tag {
-    border:#279f77 2px solid;
-    color: #279f77;
+    background-color: var(--translucent-bg-color-2);
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #3f8bee;
 }
 
 .project-description {
