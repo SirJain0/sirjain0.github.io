@@ -1,17 +1,17 @@
 const views = [
     {
         "title": "Blockbench Projects",
-        "description": "I've made a few small plugins that enhance the Blockbench functionality. I've also made a theme which changes the look of the program.",
+        "description": "Includes plugins that extend the Blockbench functionality and themes that touch up the appearance of the program.",
         "path": "blockbench_projects/index.html"
     },
     {
         "title": "Minecraft Projects",
-        "description": "I've also made some Minecraft content which ties in both my programming and 3D modeling hobbies together to create utility or adventure projects.",
+        "description": "Projects that tie in programming and art skills shown in a wide range of survival-oriented and utility mods.",
         "path": "minecraft_projects/index.html"
     },
     {
         "title": "Miscellaneous",
-        "description": "This is where I showcase some miscellaneous projects I've made which don't fall into other categories.<br><br>",
+        "description": "Miscellaneous projects which don't fall under any category, most commonly tools.",
         "path": "misc/index.html"
     }
 ]
