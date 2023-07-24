@@ -10,14 +10,6 @@ const projects = [
         "author": "SirJain",
         "link": "https://github.com/SirJain0/Blockmorphism",
         "tag": "Theme"
-    },
-    {
-        "name": "Minecraft Text Generator",
-        "description": "Generates Minecraft-styled text in cubes.",
-        "version": "2.0.1",
-        "author": "SirJain",
-        "link": "https://blockbench.net/plugins/mc_text_generator",
-        "tag": "Plugin" 
     }
 ]
 
