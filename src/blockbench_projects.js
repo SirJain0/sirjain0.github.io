@@ -12,8 +12,8 @@ const projects = [
         "tag": "Theme"
     },
     {
-        "name": "Minecraft Text Generator",
-        "description": "Generates Minecraft-styled text in cubes.",
+        "name": "Text Generator",
+        "description": "Generates blocky text in cubes.",
         "version": "2.0.1",
         "author": "SirJain",
         "link": "https://blockbench.net/plugins/mc_text_generator",
@@ -62,8 +62,8 @@ for (const project of projects) {
 for (const [id, plugin] of plugins) {
     let pluginID = plugin.title.toLowerCase().replaceAll(" ", "_");
 
-    // Skip over MC Text Generator
-    if (plugin.title === "Minecraft Text Generator") continue;
+    // Skip over Text Generator plugin
+    if (plugin.title === "Text Generator") continue;
 
     const div = document.createElement("bb-project");
     div.className = "bb-project";
