@@ -53,6 +53,15 @@ const projects = [
         "translation": "https://poeditor.com/join/project/m39omifByK",
         "tag": "Mod" 
     }
+    // {
+    //     "name": "Wither Potions",
+    //     "description": "Adds Wither potions and tipped arrows to Minecraft!",
+    //     "version": "1.0.0",
+    //     "author": "SirJain",
+    //     "link": "https://www.curseforge.com/minecraft/mc-mods/wither-potions/",
+    //     "translation": "https://poeditor.com/join/project/au8iIbh3Ip",
+    //     "tag": "Mod" 
+    // }
 ]
 
 // Get the project-list element

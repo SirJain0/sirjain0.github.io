@@ -19,6 +19,14 @@ const projects = [
         "link": "https://blockbench.net/plugins/mc_text_generator",
         "tag": "Plugin" 
     }
+    // {
+    //     "name": "Emissive Texture Renders",
+    //     "description": "Explains how to create cool emissive textures in renders in both Sketchfab and Blender!",
+    //     "version": "2.0.1",
+    //     "author": "SirJain",
+    //     "link": "https://blockbench.net/plugins/mc_text_generator",
+    //     "tag": "Wiki Article" 
+    // }
 ]
 
 // Get the project-list element

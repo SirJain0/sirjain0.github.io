@@ -62,7 +62,7 @@ body {
 .project-tag {
     background-color: var(--translucent-bg-color-2);
     padding: 8px 16px;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 10px;
     color: #3f8bee;
 }
