@@ -61,6 +61,15 @@ const projects = [
         "link": "https://www.curseforge.com/minecraft/mc-mods/wither-potions/",
         "translation": "https://poeditor.com/join/project/au8iIbh3Ip",
         "tag": "Mod" 
+    },
+    {
+        "name": "Ez Healing",
+        "description": "Makes it extremely easy to heal yourself or other targets without the use of status effects!",
+        "version": "1.0.0",
+        "author": "SirJain",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/ez-healing/",
+        "translation": "https://poeditor.com/join/project/fCwa0aMYzo",
+        "tag": "Mod" 
     }
 ]
 
