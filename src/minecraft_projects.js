@@ -64,7 +64,7 @@ const projects = [
     },
     {
         "name": "Ez Healing",
-        "description": "Makes it extremely easy to heal yourself or other targets without the use of status effects!",
+        "description": "Adds a convenient slash command to heal yourself or other targets!",
         "version": "1.0.0",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/ez-healing/",
