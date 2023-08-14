@@ -56,7 +56,7 @@ const projects = [
     {
         "name": "More Potions",
         "description": "Adds a few new potions and tipped arrows to Minecraft based on existing status effects!",
-        "version": "1.0.0",
+        "version": "2.0.0",
         "author": "SirJain",
         "link": "https://curseforge.com/minecraft/mc-mods/more-potions-items-fabric",
         "translation": "https://poeditor.com/join/project/au8iIbh3Ip",
