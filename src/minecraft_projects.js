@@ -59,7 +59,6 @@ const projects = [
         "version": "2.0.0",
         "author": "SirJain",
         "link": "https://curseforge.com/minecraft/mc-mods/more-potions-items-fabric",
-        "translation": "https://poeditor.com/join/project/au8iIbh3Ip",
         "tag": "Mod" 
     },
     {
@@ -83,26 +82,46 @@ for (const project of projects) {
     div.className = "bb-project";
     div.classList.add("project-view");
 
-    div.innerHTML = 
-    `
-        <div class="project-header">
-            <h3 class="project-title">${project.name}</h2>
+    if (project.translation) {
+        div.innerHTML = 
+        `
+            <div class="project-header">
+                <h3 class="project-title">${project.name}</h2>
+                <div class="spacer"></div>
+                <a class="project-link" style="margin-right: -5px;" href="${project.translation}" target="_blank">
+                    <span class="material-symbols-outlined">language</span>
+                </a>
+                <a class="project-link" href="${project.link}" target="_blank">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                </a>
+            </div>
+            <p class="project-authors">By: ${project.author}</p>
+            <p class="project-description">${project.description}</p>
             <div class="spacer"></div>
-            <a class="project-link" style="margin-right: -5px;" href="${project.translation}" target="_blank">
-                <span class="material-symbols-outlined">language</span>
-            </a>
-            <a class="project-link" href="${project.link}" target="_blank">
-                <span class="material-symbols-outlined">open_in_new</span>
-            </a>
-        </div>
-        <p class="project-authors">By: ${project.author}</p>
-        <p class="project-description">${project.description}</p>
-        <div class="spacer"></div>
-        <div class="project-footer">
-            <span class="project-version">Version: ${project.version}</span>
-            <span class="project-tag">${project.tag}</span>
-        </div>
-    `;
+            <div class="project-footer">
+                <span class="project-version">Version: ${project.version}</span>
+                <span class="project-tag">${project.tag}</span>
+            </div>
+        `;
+    } else {
+        div.innerHTML = 
+        `
+            <div class="project-header">
+                <h3 class="project-title">${project.name}</h2>
+                <div class="spacer"></div>
+                <a class="project-link" href="${project.link}" target="_blank">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                </a>
+            </div>
+            <p class="project-authors">By: ${project.author}</p>
+            <p class="project-description">${project.description}</p>
+            <div class="spacer"></div>
+            <div class="project-footer">
+                <span class="project-version">Version: ${project.version}</span>
+                <span class="project-tag">${project.tag}</span>
+            </div>
+        `;
+    }
 
     projectList.append(div)
     div.style.cssText += `
