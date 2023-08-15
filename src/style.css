@@ -313,7 +313,7 @@ button:hover {
 }
 
 .container {
-    max-width: 1580px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 20px 20px 80px;
 }
@@ -501,6 +501,14 @@ input:focus {
     
     .title-text {
         font-size: 80px;
+    }
+}
+
+/* Wide screens */
+@media only screen and (min-width: 1880px) {
+    #project-list {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
     }
 }
 
