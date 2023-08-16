@@ -63,7 +63,7 @@ const projects = [
     {
         "name": "Ez Healing",
         "description": "Adds a convenient slash command to heal yourself or other targets!",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "author": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/ez-healing/",
         "translation": "https://poeditor.com/join/project/fCwa0aMYzo",
