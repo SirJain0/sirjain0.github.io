@@ -41,7 +41,6 @@ const projects = [
         "version": "1.2.1",
         "author": "SirJain and Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
-        "translation": "https://poeditor.com/join/project/BLsW0V1qtn",
         "tag": "Mod" 
     },
     {
