@@ -91,24 +91,44 @@ for (const [id, plugin] of plugins) {
     const div = document.createElement("bb-project");
     div.className = "bb-project";
     div.classList.add("project-view");
+    let pluginCollaborators;
 
-    div.innerHTML = 
-    `
+    if (plugin.author != "SirJain") pluginCollaborators = plugin.author.substring(12)
+    else pluginCollaborators = null;
+
+    let innerHTML = `
         <div class="project-header">
-            <h3 class="project-title">${plugin.title}</h2>
-            <div class="spacer"></div>
-            <a class="project-link" href="https://blockbench.net/plugins/${pluginID}" target="_blank">
-                <span class="material-symbols-outlined">open_in_new</span>
-            </a>
+        <h3 class="project-title">${plugin.title}</h2>
+        <div class="spacer"></div>
+    `
+
+    if (plugin.translation) innerHTML += `
+        <a class="project-link" style="margin-right: -5px" href="${plugin.translation}" target="_blank">
+            <span class="material-symbols-outlined" style="font-size: 20px;">language</span>
+        </a>
+    `
+
+    innerHTML += `
+        <a class="project-link" href="https://www.blockbench.net/plugins/${pluginID}" target="_blank">
+            <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
+        </a>
         </div>
-        <p class="project-authors">By: ${plugin.author}</p>
+    `
+
+    if (pluginCollaborators) innerHTML += `
+        <p class="project-authors">With ${pluginCollaborators}</p>
+    `
+
+    innerHTML += `
         <p class="project-description">${plugin.description}</p>
         <div class="spacer"></div>
         <div class="project-footer">
             <span class="project-version">Version: ${plugin.version}</span>
-            <span class=" project-tag plugin-tag">Plugin</span>
+            <span class="project-tag">Plugin</span>
         </div>
-    `;
+    `
+
+    div.innerHTML = innerHTML;
 
     projectList.append(div);
     div.style.cssText += `
