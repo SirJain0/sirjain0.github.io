@@ -7,7 +7,6 @@ const projects = [
         "name": "Blockmorphism",
         "description": "A theme that effectively brings the Glassmorphism style into Blockbench!",
         "version": "1.2.0",
-        "collaborators": "SirJain",
         "link": "https://github.com/SirJain0/Blockmorphism",
         "tag": "Theme"
     },
@@ -15,7 +14,6 @@ const projects = [
         "name": "Text Generator",
         "description": "Generates blocky text in cubes.",
         "version": "2.0.1",
-        "collaborators": "SirJain",
         "link": "https://blockbench.net/plugins/mc_text_generator",
         "tag": "Plugin" 
     }
@@ -38,23 +36,39 @@ for (const project of projects) {
     div.className = "bb-project";
     div.classList.add("project-view");
 
-    div.innerHTML = 
-    `
+    let innerHTML = `
         <div class="project-header">
-            <h3 class="project-title">${project.name}</h2>
-            <div class="spacer"></div>
-            <a class="project-link" href="${project.link}" target="_blank">
-                <span class="material-symbols-outlined">open_in_new</span>
-            </a>
+        <h3 class="project-title">${project.name}</h2>
+        <div class="spacer"></div>
+    `
+
+    if (project.translation) innerHTML += `
+        <a class="project-link" style="margin-right: -5px" href="${project.translation}" target="_blank">
+            <span class="material-symbols-outlined" style="font-size: 20px;">language</span>
+        </a>
+    `
+
+    innerHTML += `
+        <a class="project-link" href="${project.link}" target="_blank">
+            <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
+        </a>
         </div>
-        <p class="project-authors">By: ${project.collaborators}</p>
+    `
+
+    if (project.collaborators) innerHTML += `
+        <p class="project-authors">With ${project.collaborators}</p>
+    `
+
+    innerHTML += `
         <p class="project-description">${project.description}</p>
         <div class="spacer"></div>
         <div class="project-footer">
             <span class="project-version">Version: ${project.version}</span>
             <span class="project-tag">${project.tag}</span>
         </div>
-    `;
+    `
+
+    div.innerHTML = innerHTML;
 
     projectList.append(div)
     div.style.cssText += `
@@ -63,44 +77,57 @@ for (const project of projects) {
         animation:project-ease-in 1000ms ease-out ${animDelay}ms;
         animation-fill-mode: forwards;
     `;
+
     animDelay += 120;
 }
 
 // Iterate and display each project
-for (const [id, plugin] of plugins) {
-    let pluginID = plugin.title.toLowerCase().replaceAll(" ", "_");
-
-    // Skip over Text Generator plugin
-    if (plugin.title === "Text Generator") continue;
-
+for (const [id, project] of projects) {
     const div = document.createElement("bb-project");
     div.className = "bb-project";
     div.classList.add("project-view");
 
-    div.innerHTML = 
-    `
+    let innerHTML = `
         <div class="project-header">
-            <h3 class="project-title">${plugin.title}</h2>
-            <div class="spacer"></div>
-            <a class="project-link" href="https://blockbench.net/plugins/${pluginID}" target="_blank">
-                <span class="material-symbols-outlined">open_in_new</span>
-            </a>
+        <h3 class="project-title">${project.name}</h2>
+        <div class="spacer"></div>
+    `
+
+    if (project.translation) innerHTML += `
+        <a class="project-link" style="margin-right: -5px" href="${project.translation}" target="_blank">
+            <span class="material-symbols-outlined" style="font-size: 20px;">language</span>
+        </a>
+    `
+
+    innerHTML += `
+        <a class="project-link" href="${project.link}" target="_blank">
+            <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
+        </a>
         </div>
-        <p class="project-authors">By: ${plugin.author}</p>
-        <p class="project-description">${plugin.description}</p>
+    `
+
+    if (project.author) innerHTML += `
+        <p class="project-authors">With ${project.author}</p>
+    `
+
+    innerHTML += `
+        <p class="project-description">${project.description}</p>
         <div class="spacer"></div>
         <div class="project-footer">
-            <span class="project-version">Version: ${plugin.version}</span>
-            <span class=" project-tag plugin-tag">Plugin</span>
+            <span class="project-version">Version: ${project.version}</span>
+            <span class="project-tag">${project.tag}</span>
         </div>
-    `;
+    `
 
-    projectList.append(div);
+    div.innerHTML = innerHTML;
+
+    projectList.append(div)
     div.style.cssText += `
         transform: translateY(-3%);
         opacity: 0;
         animation:project-ease-in 1000ms ease-out ${animDelay}ms;
         animation-fill-mode: forwards;
     `;
-    animDelay += 80;
+
+    animDelay += 120;
 }
