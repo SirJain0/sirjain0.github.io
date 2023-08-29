@@ -3,7 +3,7 @@ const projects = [
         "name": "Citation Generator",
         "description": "A small tool that allows you to generate a citation for a website (following the APA formatting)!",
         "version": "1.0.3",
-        "author": "SirJain",
+        "collaborators": "SirJain",
         "link": "citation_generator",
         "tag": "Web Page"
     }
@@ -28,7 +28,7 @@ for (const project of projects) {
                 <span class="material-symbols-outlined">open_in_new</span>
             </a>
         </div>
-        <p class="project-authors">By: ${project.author}</p>
+        <p class="project-authors">By: ${project.collaborators}</p>
         <p class="project-description">${project.description}</p>
         <div class="spacer"></div>
         <div class="project-footer">

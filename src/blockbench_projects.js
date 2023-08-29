@@ -7,7 +7,7 @@ const projects = [
         "name": "Blockmorphism",
         "description": "A theme that effectively brings the Glassmorphism style into Blockbench!",
         "version": "1.2.0",
-        "author": "SirJain",
+        "collaborators": "SirJain",
         "link": "https://github.com/SirJain0/Blockmorphism",
         "tag": "Theme"
     },
@@ -15,7 +15,7 @@ const projects = [
         "name": "Text Generator",
         "description": "Generates blocky text in cubes.",
         "version": "2.0.1",
-        "author": "SirJain",
+        "collaborators": "SirJain",
         "link": "https://blockbench.net/plugins/mc_text_generator",
         "tag": "Plugin" 
     }
@@ -23,7 +23,7 @@ const projects = [
     //     "name": "Emissive Texture Renders",
     //     "description": "Explains how to create cool emissive textures in renders in both Sketchfab and Blender!",
     //     "version": "2.0.1",
-    //     "author": "SirJain",
+    //     "collaborators": "SirJain",
     //     "link": "https://blockbench.net/plugins/mc_text_generator",
     //     "tag": "Wiki Article" 
     // }
@@ -47,7 +47,7 @@ for (const project of projects) {
                 <span class="material-symbols-outlined">open_in_new</span>
             </a>
         </div>
-        <p class="project-authors">By: ${project.author}</p>
+        <p class="project-authors">By: ${project.collaborators}</p>
         <p class="project-description">${project.description}</p>
         <div class="spacer"></div>
         <div class="project-footer">
