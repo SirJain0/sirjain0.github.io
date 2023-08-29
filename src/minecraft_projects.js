@@ -3,7 +3,6 @@ const projects = [
         "name": "Extensive Diamonds",
         "description": "Mod that adds three new diamond types to Minecraft!",
         "version": "1.1.1",
-        "collaborators": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/extensive-diamonds/",
         "translation": "https://poeditor.com/join/project/rUCEF9wpEF",
         "tag": "Mod"
@@ -12,7 +11,6 @@ const projects = [
         "name": "Throwable Fluids",
         "description": "Mod that adds throwable lava, throwable water, and more!",
         "version": "1.1.5",
-        "collaborators": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/throwable-fluids/",
         "translation": "https://poeditor.com/join/project/M4owFigkSJ",
         "tag": "Mod" 
@@ -21,7 +19,6 @@ const projects = [
         "name": "Convenient Hitboxes",
         "description": "Mod that adds a button toggling entity hitbox visibility, having the same functionality as F3+B.",
         "version": "1.0.5",
-        "collaborators": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/convenient-hitboxes/",
         "translation": "https://poeditor.com/join/project/54SbKsj4o6",
         "tag": "Mod"
@@ -30,7 +27,6 @@ const projects = [
         "name": "Tiramisu",
         "description": "Mod that adds bitesized and full tiramisu to Minecraft!",
         "version": "1.0.2",
-        "collaborators": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/tiramisu/",
         "translation": "https://poeditor.com/join/project/RXfhCAd7Hp",
         "tag": "Mod" 
@@ -39,7 +35,7 @@ const projects = [
         "name": "Perfect Plushies",
         "description": "Adds various decorative plushies to Minecraft, along with some Easter Eggs!",
         "version": "1.4.0",
-        "collaborators": "SirJain and Nyfaria",
+        "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
         "tag": "Mod" 
     },
@@ -47,7 +43,7 @@ const projects = [
         "name": "Herespawn",
         "description": "Adds a button to the death screen which respawns player to death location.",
         "version": "1.1.2",
-        "collaborators": "SirJain and Nyfaria",
+        "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/herespawn/",
         "translation": "https://poeditor.com/join/project/m39omifByK",
         "tag": "Mod" 
@@ -56,7 +52,6 @@ const projects = [
         "name": "More Potions",
         "description": "Adds a few new potions and tipped arrows to Minecraft based on existing status effects!",
         "version": "2.0.0",
-        "collaborators": "SirJain",
         "link": "https://curseforge.com/minecraft/mc-mods/more-potions-items-fabric",
         "tag": "Mod" 
     },
@@ -64,7 +59,6 @@ const projects = [
         "name": "Ez Healing",
         "description": "Adds a convenient slash command to heal yourself or other targets!",
         "version": "1.0.1",
-        "collaborators": "SirJain",
         "link": "https://www.curseforge.com/minecraft/mc-mods/ez-healing/",
         "translation": "https://poeditor.com/join/project/fCwa0aMYzo",
         "tag": "Mod" 
@@ -81,46 +75,39 @@ for (const project of projects) {
     div.className = "bb-project";
     div.classList.add("project-view");
 
-    if (project.translation) {
-        div.innerHTML = 
-        `
-            <div class="project-header">
-                <h3 class="project-title">${project.name}</h2>
-                <div class="spacer"></div>
-                <a class="project-link" style="margin-right: -5px;" href="${project.translation}" target="_blank">
-                    <span class="material-symbols-outlined">language</span>
-                </a>
-                <a class="project-link" href="${project.link}" target="_blank">
-                    <span class="material-symbols-outlined">open_in_new</span>
-                </a>
-            </div>
-            <p class="project-authors">By: ${project.collaborators}</p>
-            <p class="project-description">${project.description}</p>
-            <div class="spacer"></div>
-            <div class="project-footer">
-                <span class="project-version">Version: ${project.version}</span>
-                <span class="project-tag">${project.tag}</span>
-            </div>
-        `;
-    } else {
-        div.innerHTML = 
-        `
-            <div class="project-header">
-                <h3 class="project-title">${project.name}</h2>
-                <div class="spacer"></div>
-                <a class="project-link" href="${project.link}" target="_blank">
-                    <span class="material-symbols-outlined">open_in_new</span>
-                </a>
-            </div>
-            <p class="project-authors">By: ${project.author}</p>
-            <p class="project-description">${project.description}</p>
-            <div class="spacer"></div>
-            <div class="project-footer">
-                <span class="project-version">Version: ${project.version}</span>
-                <span class="project-tag">${project.tag}</span>
-            </div>
-        `;
-    }
+    let innerHTML = `
+        <div class="project-header">
+        <h3 class="project-title">${project.name}</h2>
+        <div class="spacer"></div>
+    `
+
+    if (project.translation) innerHTML += `
+        <a class="project-link" style="margin-right: -5px" href="${project.translation}" target="_blank">
+            <span class="material-symbols-outlined" style="font-size: 20px;">language</span>
+        </a>
+    `
+
+    innerHTML += `
+        <a class="project-link" href="${project.link}" target="_blank">
+            <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
+        </a>
+        </div>
+    `
+
+    if (project.collaborators) innerHTML += `
+        <p class="project-authors">With ${project.collaborators}</p>
+    `
+
+    innerHTML += `
+        <p class="project-description">${project.description}</p>
+        <div class="spacer"></div>
+        <div class="project-footer">
+            <span class="project-version">Version: ${project.version}</span>
+            <span class="project-tag">${project.tag}</span>
+        </div>
+    `
+
+    div.innerHTML = innerHTML;
 
     projectList.append(div)
     div.style.cssText += `
@@ -129,5 +116,6 @@ for (const project of projects) {
         animation:project-ease-in 1000ms ease-out ${animDelay}ms;
         animation-fill-mode: forwards;
     `;
+
     animDelay += 120;
 }
