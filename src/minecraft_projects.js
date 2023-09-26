@@ -62,6 +62,14 @@ const projects = [
         "link": "https://www.curseforge.com/minecraft/mc-mods/ez-healing/",
         "translation": "https://poeditor.com/join/project/fCwa0aMYzo",
         "tag": "Mod" 
+    },
+    {
+        "name": "Spooky Bats",
+        "description": "Adds a convenient slash command to heal yourself or other targets!",
+        "version": "0.1.0 Beta",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/ez-healing/",
+        "tag": "Mod" 
     }
 ]
 
