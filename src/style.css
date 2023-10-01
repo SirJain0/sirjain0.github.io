@@ -411,8 +411,8 @@ input:focus {
     }
 
     .project-title {
-        font-size: 24px;
-        inline-size: 300px;
+        font-size: 20px;
+        inline-size: 600px;
     }
 
     #title {
@@ -476,7 +476,7 @@ input:focus {
         inline-size: 300px;
         word-break: break-all;
         hyphens: manual;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     #form-container {
