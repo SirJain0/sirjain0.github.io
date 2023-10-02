@@ -22,7 +22,7 @@ const projects = [
         "description": "Explains how to create cool emissive textures in renders in both Sketchfab and Blender!",
         "version": "1.0.0",
         "collaborators": "Geode",
-        "link": "https://blockbench.net/plugins/mc_text_generator",
+        "link": "https://www.blockbench.net/wiki/guides/emissive-textures-renders",
         "tag": "Wiki Article" 
     }
 ]
