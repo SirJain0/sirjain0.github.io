@@ -66,7 +66,7 @@ const projects = [
     {
         "name": "Spooky Bats",
         "description": "Adds a convenient slash command to heal yourself or other targets!",
-        "version": "0.3.1 Beta",
+        "version": "0.4.0 Beta",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/spooky-bats/",
         "tag": "Mod" 
