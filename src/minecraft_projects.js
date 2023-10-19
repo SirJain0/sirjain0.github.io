@@ -70,15 +70,15 @@ const projects = [
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/spooky-bats/",
         "tag": "Mod" 
-    },
-    {
-        "name": "Creepy Decor",
-        "description": "Adds a bunch of eerie and spooky furniture for spooky season. Originally made for 2023 SpookyJam!",
-        "version": "0.1.0 Alpha",
-        "collaborators": "JTK222",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/creepy-decor/",
-        "tag": "Mod" 
     }
+    // {
+    //     "name": "Creepy Decor",
+    //     "description": "Adds a bunch of eerie and creepy furniture for spooky season. Originally made for 2023 SpookyJam!",
+    //     "version": "0.1.0 Alpha",
+    //     "collaborators": "JTK222",
+    //     "link": "https://www.curseforge.com/minecraft/mc-mods/creepy-decor/",
+    //     "tag": "Mod" 
+    // }
 ]
 
 // Get the project-list element
