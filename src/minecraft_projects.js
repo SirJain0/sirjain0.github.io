@@ -2,7 +2,7 @@ const projects = [
     {
         "name": "Extensive Diamonds",
         "description": "Mod that adds three new diamond types to Minecraft!",
-        "version": "1.2.0",
+        "version": "1.3.0",
         "link": "https://www.curseforge.com/minecraft/mc-mods/extensive-diamonds/",
         "translation": "https://poeditor.com/join/project/rUCEF9wpEF",
         "tag": "Mod"
@@ -34,7 +34,7 @@ const projects = [
     {
         "name": "Perfect Plushies",
         "description": "Adds various decorative plushies to Minecraft, along with some Easter Eggs!",
-        "version": "1.7.0",
+        "version": "1.8.0",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
         "tag": "Mod" 
