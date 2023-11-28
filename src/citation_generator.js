@@ -42,7 +42,7 @@ function writeValues() {
         if (publicationName.value != "") citation += publicationName.value + ". ";
         if (url.value != "") citation += `<br><b>${url.value}</b>`; // Bold
 
-        outputText.setHTML(citation);
+        outputText.innerHTML = citation;
         outputText.style.setProperty("color", "white");
 
         citationCleaned = citation
