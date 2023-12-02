@@ -64,9 +64,9 @@ const projects = [
         "tag": "Mod" 
     },
     {
-        "name": "Spooky Bats",
+        "name": "Bats Galore",
         "description": "Adds many bats with unique loot for spooky season. Originally made for 2023 SpookyJam!",
-        "version": "0.6.1 Beta",
+        "version": "1.0.0",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/spooky-bats/",
         "tag": "Mod" 
