@@ -70,6 +70,14 @@ const projects = [
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/spooky-bats/",
         "tag": "Mod" 
+    },
+    {
+        "name": "Gifts Of Giving",
+        "description": "Adds gift blocks players can add items in and gift each other!",
+        "version": "1.0.0",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/gifts-of-giving/",
+        "tag": "Mod" 
     }
     // {
     //     "name": "Creepy Decor",
