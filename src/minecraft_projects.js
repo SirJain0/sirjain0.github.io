@@ -74,7 +74,7 @@ const projects = [
     {
         "name": "Gifts Of Giving",
         "description": "Adds gift blocks players can add items in and gift each other!",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/gifts-of-giving/",
         "tag": "Mod" 
