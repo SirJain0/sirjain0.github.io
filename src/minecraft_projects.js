@@ -34,7 +34,7 @@ const projects = [
     {
         "name": "Perfect Plushies",
         "description": "Adds various decorative plushies to Minecraft, along with some Easter Eggs!",
-        "version": "1.8.0",
+        "version": "1.9.0",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
         "tag": "Mod" 
@@ -79,14 +79,6 @@ const projects = [
         "link": "https://www.curseforge.com/minecraft/mc-mods/gifts-of-giving/",
         "tag": "Mod" 
     }
-    // {
-    //     "name": "Creepy Decor",
-    //     "description": "Adds a bunch of eerie and creepy furniture for spooky season. Originally made for 2023 SpookyJam!",
-    //     "version": "0.1.0 Alpha",
-    //     "collaborators": "JTK222",
-    //     "link": "https://www.curseforge.com/minecraft/mc-mods/creepy-decor/",
-    //     "tag": "Mod" 
-    // }
 ]
 
 // Get the project-list element
