@@ -125,6 +125,17 @@ body {
     animation: project-ease-in 1000ms ease-out;
 }
 
+.portfolio-view {
+    background-color: var(--translucent-bg-color);
+    margin: 18px -10px;
+    border-radius: 20px;
+    color: #ADADAD;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    animation: project-ease-in 1000ms ease-out;
+}
+
 .back-button {
     margin-left: 0px; 
     font-family: 'Poppins'; 
@@ -224,21 +235,17 @@ body {
     padding: 10px 20px;
 }
 
+.view-project-card:nth-child(1),
 .view-project-card:nth-child(2) {
-    animation: title-card-ease-in 1000ms ease-in-out;
-}
-
-.view-project-card:nth-child(1) {
     opacity: 0;
-    transform: translateY(-3%);
-    animation: title-card-side-ease-in 1100ms ease-in-out 100ms;
+    animation: title-card-top-ease-in 1000ms ease-in-out;
     animation-fill-mode: forwards;
 }
 
-.view-project-card:nth-child(3) {
+.view-project-card:nth-child(3),
+.view-project-card:nth-child(4) {
     opacity: 0;
-    transform: translateY(-3%);
-    animation: title-card-side-ease-in 1100ms ease-in-out 100ms;
+    animation: title-card-bottom-ease-in 1000ms ease-in-out;
     animation-fill-mode: forwards;
 }
 
@@ -442,6 +449,10 @@ input:focus {
         margin: 18px;
     }
 
+    .portfolio-view {
+        width: 60%;
+    }
+
     .social {
         border-radius: 20px;
         margin: 10px 20px;
@@ -466,10 +477,15 @@ input:focus {
     #project-list {
         display: grid;
         grid-template-columns: 33% 34% 33%;
-    }    
+    }
+
+    #portfolio-display {
+        width: 50%;
+        align-items: center;
+    }
 
     #view-projects-view {
-        grid-template-columns: 22% 22% 22%;
+        grid-template-columns: 30% 30%;
     }
     
     .project-title {
@@ -513,7 +529,7 @@ input:focus {
 }
 
 /* Animations */
-@keyframes title-card-ease-in {
+@keyframes title-card-top-ease-in {
     0% {
         opacity: 0;
         transform: translateY(-3%);
@@ -521,6 +537,19 @@ input:focus {
 
     100% {
         opacity: 100;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes title-card-bottom-ease-in {
+    20% {
+        opacity: 0;
+        transform: translateY(-3%);
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateY(0%);
     }
 }
 
