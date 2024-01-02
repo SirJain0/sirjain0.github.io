@@ -1,6 +1,5 @@
-// Get the project-list element
-const projectList = document.getElementById("portfolio-display");
-let animDelay = 0;
+// Get the portfolio-display element
+const portfolio = document.getElementById("portfolio-display");
 
 const div = document.createElement("portfolio");
 div.className = "portfolio";
@@ -18,13 +17,55 @@ div.innerHTML = `
     <div class="spacer" style="margin-top: 25px;"></div>
 `
 
-projectList.append(div);
+portfolio.append(div);
 
-div.style.cssText += `
-    transform: translateY(-3%);
-    opacity: 0;
-    animation:project-ease-in 1000ms ease-out ${animDelay}ms;
-    animation-fill-mode: forwards;
-`;
+// STORES
 
-animDelay += 120;
+const storeList = [
+    {
+        name: "ArtStation",
+        link: ""
+    },
+    {
+        name: "MCModels",
+        link: ""
+    },
+    {
+        name: "Sketchfab",
+        link: ""
+    },
+]
+
+let animDelay = 0;
+const stores = document.getElementById("store-list");
+
+for (const store of storeList) {
+    const div = document.createElement("store");
+    div.className = "store";
+    div.classList.add("store-view");
+
+    div.innerHTML = 
+    `
+        <div class="project-card-title-div">
+            <p class="project-card-title">${store.name}</p>
+        </div>
+        <div class="spacer"></div>
+        <div class="project-card-button-div">
+            <a href="${store.link}">
+                <button class="project-card-button" style="margin-top: -1px;">View Store</button>
+            </a>
+        </div>
+    `;
+
+
+    stores.append(div);
+
+    div.style.cssText += `
+        transform: translateY(-3%);
+        opacity: 0;
+        animation:project-ease-in 1000ms ease-out ${animDelay}ms;
+        animation-fill-mode: forwards;
+    `;
+
+    animDelay += 120;
+}
