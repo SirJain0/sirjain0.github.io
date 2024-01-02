@@ -23,15 +23,15 @@ portfolio.append(div);
 
 const storeList = [
     {
-        name: "Artstation",
-        link: ""
-    },
-    {
         name: "Sketchfab",
         link: ""
     },
     {
         name: "MCModels",
+        link: ""
+    },
+    {
+        name: "Artstation",
         link: ""
     }
 ]
