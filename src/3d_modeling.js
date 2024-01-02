@@ -23,7 +23,7 @@ portfolio.append(div);
 
 const storeList = [
     {
-        name: "ArtStation",
+        name: "Artstation",
         link: ""
     },
     {
