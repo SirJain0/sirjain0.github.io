@@ -27,13 +27,13 @@ const storeList = [
         link: ""
     },
     {
-        name: "MCModels",
-        link: ""
-    },
-    {
         name: "Sketchfab",
         link: ""
     },
+    {
+        name: "MCModels",
+        link: ""
+    }
 ]
 
 let animDelay = 0;
