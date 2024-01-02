@@ -31,7 +31,7 @@ const storeList = [
         link: ""
     },
     {
-        name: "Artstation",
+        name: "ArtStation",
         link: ""
     }
 ]
