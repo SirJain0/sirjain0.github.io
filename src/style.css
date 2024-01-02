@@ -126,6 +126,7 @@ body {
 }
 
 .portfolio-view {
+    padding: 10px;
     background-color: var(--translucent-bg-color);
     margin: 18px -10px;
     border-radius: 20px;
@@ -450,7 +451,7 @@ input:focus {
     }
 
     .portfolio-view {
-        width: 60%;
+        width: 80%;
     }
 
     .social {
@@ -482,6 +483,7 @@ input:focus {
     #portfolio-display {
         width: 50%;
         align-items: center;
+        margin: auto;
     }
 
     #view-projects-view {
