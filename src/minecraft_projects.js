@@ -78,6 +78,14 @@ const projects = [
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/gifts-of-giving/",
         "tag": "Mod" 
+    },
+    {
+        "name": "Pet Shop",
+        "description": "Adds various pets with realistic behavior and shops which sell pet-related items and cosmetics!",
+        "version": "0.1.0 Beta",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/pet-shop/",
+        "tag": "Mod" 
     }
 ]
 
