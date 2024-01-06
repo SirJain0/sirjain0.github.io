@@ -16,7 +16,7 @@ const views = [
     },
     {
         "title": "Miscellaneous",
-        "description": "Miscellaneous projects which don't fall under any category, most commonly tools.",
+        "description": "Miscellaneous projects and things I have made which don't fall under any category.",
         "path": "misc_projects/"
     }
 ]
