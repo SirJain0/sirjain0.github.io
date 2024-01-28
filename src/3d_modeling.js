@@ -22,17 +22,17 @@ portfolio.append(div);
 // STORES
 
 const storeList = [
-    {
-        name: "Sketchfab",
-        link: ""
-    },
-    {
-        name: "MCModels",
-        link: ""
-    },
+    // {
+    //     name: "Sketchfab",
+    //     link: ""
+    // },
+    // {
+    //     name: "MCModels",
+    //     link: ""
+    // },
     {
         name: "ArtStation",
-        link: ""
+        link: "https://www.artstation.com/sirjain/store?tab=digital_product"
     }
 ]
 
