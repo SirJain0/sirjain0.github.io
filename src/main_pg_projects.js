@@ -10,8 +10,13 @@ const views = [
         "path": "minecraft_projects/"
     },
     {
+        "title": "3D Modeling",
+        "description": "All websites and projects related to 3D modeling, including a portfolio and sites where I sell my work.",
+        "path": "3d_modeling/"
+    },
+    {
         "title": "Miscellaneous",
-        "description": "Miscellaneous projects which don't fall under any category, most commonly tools.",
+        "description": "Miscellaneous projects and things I have made which don't fall under any category.",
         "path": "misc_projects/"
     }
 ]
