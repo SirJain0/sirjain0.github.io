@@ -51,7 +51,7 @@ for (const store of storeList) {
         </div>
         <div class="spacer"></div>
         <div class="project-card-button-div">
-            <a href="${store.link}">
+            <a target="_blank" href="${store.link}">
                 <button class="project-card-button" style="margin-top: -1px;">View Store</button>
             </a>
         </div>
