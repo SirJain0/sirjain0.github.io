@@ -32,7 +32,7 @@ const storeList = [
     // },
     {
         name: "ArtStation",
-        link: "https://www.artstation.com/sirjain/store?tab=digital_product"
+        link: "https://sirjain.artstation.com/store"
     }
 ]
 
