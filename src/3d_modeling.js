@@ -29,10 +29,6 @@ const storeList = [
     {
         name: "MCModels",
         link: "https://mcmodels.net/vendors/123/sirjain-models"
-    },
-    {
-        name: "ArtStation",
-        link: "https://sirjain.artstation.com/store"
     }
 ]
 
