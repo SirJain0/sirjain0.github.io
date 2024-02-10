@@ -187,7 +187,7 @@ body {
     animation: title-text-anim 1000ms ease-out;
 }
 
-#main-pg-header {
+#main-pg-footer {
     width: 100%;
     text-align: center;
     margin-top: 80px;
