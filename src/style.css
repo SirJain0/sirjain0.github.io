@@ -165,6 +165,7 @@ body {
     font-size: 60px;
     width: 100%;
     text-align: center;
+    margin-top: 100px;
 
     animation: title-text-anim 1000ms ease-out;
 }
@@ -178,16 +179,18 @@ body {
 
 #socials {
     background-color: var(--translucent-bg-color);
-    padding: 10px;
+    padding: 15px 10px 10px 10px;
     border-radius: 20px;
     margin: 20px 0px 20px 20px;
     display: inline-block;
     align-items: center;
+    animation: title-text-anim 1000ms ease-out;
 }
 
 #main-pg-header {
     width: 100%;
     text-align: center;
+    margin-top: 80px;
 }
 
 .project-authors {
@@ -198,7 +201,7 @@ body {
 }
 
 .social {
-    border-radius: 20px;
+    border-radius: 15px;
     margin: 10px 15px;
     box-shadow: 0px 7px 20px rgba(0, 0, 0, .3);
     transition: transform 0.2s, box-shadow 0.2s, border-radius 0.2s;
@@ -229,6 +232,7 @@ body {
     grid-template-columns: 80%;
     gap: 40px;
     justify-content: center;
+    margin-top: 120px;
 }
 
 .view-project-card, .store-view {
@@ -460,7 +464,6 @@ input:focus {
 
     .social {
         border-radius: 20px;
-        margin: 10px 20px;
         box-shadow: 0px 7px 20px rgba(0, 0, 0, .3);
         transition: transform 0.2s;
         width: 55px;
