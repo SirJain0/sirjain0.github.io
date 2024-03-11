@@ -24,11 +24,10 @@ const projects = [
         "tag": "Mod"
     },
     {
-        "name": "Tiramisu",
-        "description": "Mod that adds bitesized and full tiramisu to Minecraft!",
-        "version": "1.0.2",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/tiramisu/",
-        "translation": "https://poeditor.com/join/project/RXfhCAd7Hp",
+        "name": "Jain's Desserts",
+        "description": "Mod that adds a bunch of random desserts (common and unique) to Minecraft!",
+        "version": "2.0.0",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/jains-desserts/",
         "tag": "Mod" 
     },
     {
