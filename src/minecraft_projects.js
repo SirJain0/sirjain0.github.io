@@ -4,7 +4,6 @@ const projects = [
         "description": "Mod that adds three new diamond types to Minecraft!",
         "version": "1.3.3",
         "link": "https://www.curseforge.com/minecraft/mc-mods/extensive-diamonds/",
-        "translation": "https://poeditor.com/join/project/rUCEF9wpEF",
         "tag": "Mod"
     },
     {
@@ -12,7 +11,6 @@ const projects = [
         "description": "Mod that adds throwable lava, throwable water, and more!",
         "version": "1.1.5",
         "link": "https://www.curseforge.com/minecraft/mc-mods/throwable-fluids/",
-        "translation": "https://poeditor.com/join/project/M4owFigkSJ",
         "tag": "Mod" 
     },
     {
@@ -20,7 +18,6 @@ const projects = [
         "description": "Mod that adds a button toggling entity hitbox visibility, having the same functionality as F3+B.",
         "version": "1.0.5",
         "link": "https://www.curseforge.com/minecraft/mc-mods/convenient-hitboxes/",
-        "translation": "https://poeditor.com/join/project/54SbKsj4o6",
         "tag": "Mod"
     },
     {
@@ -44,7 +41,6 @@ const projects = [
         "version": "1.1.2",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/herespawn/",
-        "translation": "https://poeditor.com/join/project/m39omifByK",
         "tag": "Mod" 
     },
     {
@@ -59,7 +55,6 @@ const projects = [
         "description": "Adds a convenient slash command to heal yourself or other targets!",
         "version": "1.0.2",
         "link": "https://www.curseforge.com/minecraft/mc-mods/ez-healing/",
-        "translation": "https://poeditor.com/join/project/fCwa0aMYzo",
         "tag": "Mod" 
     },
     {
@@ -102,12 +97,6 @@ for (const project of projects) {
         <div class="project-header">
         <h3 class="project-title">${project.name}</h2>
         <div class="spacer"></div>
-    `
-
-    if (project.translation) innerHTML += `
-        <a class="project-link" style="margin-right: -5px" href="${project.translation}" target="_blank">
-            <span class="material-symbols-outlined" style="font-size: 20px;">language</span>
-        </a>
     `
 
     innerHTML += `
