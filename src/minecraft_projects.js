@@ -80,6 +80,14 @@ const projects = [
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/pet-shop/",
         "tag": "Mod" 
+    },
+    {
+        "name": "Water Balloon",
+        "description": "Adds Water Balloons to Minecraft so you can have some summer fun with your friends!",
+        "version": "1.0.0",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/water-balloon/",
+        "tag": "Mod" 
     }
 ]
 
