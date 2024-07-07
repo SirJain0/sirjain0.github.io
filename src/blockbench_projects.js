@@ -6,7 +6,7 @@ const projects = [
     {
         "name": "Blockmorphism",
         "description": "A theme that effectively brings the Glassmorphism style into Blockbench!",
-        "version": "2.0.0",
+        "version": "2.0.1",
         "link": "https://github.com/SirJain0/Blockmorphism",
         "tag": "Theme"
     },
