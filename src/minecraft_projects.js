@@ -88,6 +88,14 @@ const projects = [
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/water-balloon/",
         "tag": "Mod" 
+    },
+    {
+        "name": "Perfect Birbs",
+        "description": "Adds many bird plushies to the game!",
+        "version": "1.0.0",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-birbs/",
+        "tag": "Mod" 
     }
 ]
 
