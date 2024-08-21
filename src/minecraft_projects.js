@@ -96,6 +96,22 @@ const projects = [
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-birbs/",
         "tag": "Mod" 
+    },
+    {
+        "name": "Powers of Spite",
+        "description": "A superpower mod where you can inject yourself with a magical serum to obtain random powers!",
+        "version": "1.0.0",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/powers-of-spite/",
+        "tag": "Mod" 
+    },
+    {
+        "name": "Cushy Pillows",
+        "description": "Adds customizable, interactive pillows that you can sleep with, decorate, and throw at others!",
+        "version": "1.0.0",
+        "collaborators": "daniel___k",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/cushy-pillows/",
+        "tag": "Mod" 
     }
 ]
 
