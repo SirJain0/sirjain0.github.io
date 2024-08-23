@@ -100,7 +100,7 @@ const projects = [
     {
         "name": "Powers of Spite",
         "description": "A superpower mod where you can inject yourself with a magical serum to obtain random powers!",
-        "version": "0.1.1 Beta",
+        "version": "0.1.2 Beta",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/powers-of-spite/",
         "tag": "Mod" 
