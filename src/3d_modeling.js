@@ -26,16 +26,25 @@ const productList = [
         name: "Potted Cacti",
         link: "",
         description: "Collection of nine unique cacti, each one with a different shape and a different decorated pot.",
+        price: "2.97"
     },
     {
         name: "Potted Flowering Cacti",
         link: "",
         description: "Collection of five unique flowering cacti, each one with a different shape and a different decorated pot.",
+        price: "3.72"
     },
     {
         name: "Flashlights",
         link: "",
-        description: "Here is a description of this product",
+        description: "Collection of six low-poly flashlights (one for each primary and secondary color). The download also includes a grayscale version so you can produce any color you want.",
+        price: "2.97"
+    },
+    {
+        name: "Stools",
+        link: "",
+        description: "Collection of six low-poly, unique-looking stools. Each stool has a unique shape and texture to ensure diversity.",
+        price: "2.97"
     }
 ]
 
@@ -60,7 +69,7 @@ for (const product of productList) {
         <div class="spacer"></div>
         <div class="project-card-button-div">
             <a target="_blank" href="${product.link}">
-                <button class="project-card-button">Buy Product</button>
+                <button class="project-card-button">Buy for $${product.price} USD</button>
             </a>
         </div>
     `;
