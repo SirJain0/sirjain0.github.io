@@ -108,7 +108,7 @@ const projects = [
     {
         "name": "Cushy Pillows",
         "description": "Adds customizable, interactive pillows that you can sleep with, decorate, and throw at others!",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "collaborators": "Daniel",
         "link": "https://www.curseforge.com/minecraft/mc-mods/cushy-pillows/",
         "tag": "Mod" 
