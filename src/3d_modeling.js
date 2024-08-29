@@ -21,38 +21,45 @@ portfolio.append(div);
 
 // STORES
 
-const storeList = [
-    // {
-    //     name: "Sketchfab",
-    //     link: ""
-    // },
+const productList = [
     {
-        name: "MCModels",
-        link: "https://mcmodels.net/vendors/123/sirjain-models"
+        name: "Random Product",
+        link: "https://mcmodels.net/vendors/123/sirjain-models",
+        description: "Here is a description of this product"
+    },
+    {
+        name: "Random Product",
+        link: "https://mcmodels.net/vendors/123/sirjain-models",
+        description: "Here is a description of this product"
+    },
+    {
+        name: "Random Product",
+        link: "https://mcmodels.net/vendors/123/sirjain-models",
+        description: "Here is a description of this product"
     }
 ]
 
 let animDelay = 0;
-const stores = document.getElementById("store-list");
+const stores = document.getElementById("product-list");
 
-for (const store of storeList) {
-    const div = document.createElement("store");
-    div.className = "store";
-    div.classList.add("store-view");
+for (const store of productList) {
+    const div = document.createElement("product");
+    div.className = "product";
+    div.classList.add("product-view");
 
     div.innerHTML = 
     `
         <div class="project-card-title-div">
             <p class="project-card-title">${store.name}</p>
         </div>
+        <p class="project-description">${store.description}</p>
         <div class="spacer"></div>
         <div class="project-card-button-div">
             <a target="_blank" href="${store.link}">
-                <button class="project-card-button" style="margin-top: -1px;">View Store</button>
+                <button class="project-card-button">Buy Product</button>
             </a>
         </div>
     `;
-
 
     stores.append(div);
 
