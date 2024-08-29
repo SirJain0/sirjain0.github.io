@@ -77,6 +77,12 @@ body {
     padding-top: 5px;
 }
 
+.product-img {
+    border-radius: 20px;
+    max-width: 95%;
+    height: auto;
+}
+
 .project-link {
     color: #3f8bee;
     text-decoration: none;
@@ -489,7 +495,7 @@ input:focus {
 
     #product-list {
         display: grid;
-        grid-template-columns: 24% 24% 24%;
+        grid-template-columns: 40% 40%;
     }
 
     #portfolio-display {

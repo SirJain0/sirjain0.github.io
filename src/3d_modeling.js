@@ -23,39 +23,43 @@ portfolio.append(div);
 
 const productList = [
     {
-        name: "Random Product",
-        link: "https://mcmodels.net/vendors/123/sirjain-models",
-        description: "Here is a description of this product"
+        name: "Potted Cacti",
+        link: "",
+        description: "Collection of nine unique cacti, each one with a different shape and a different decorated pot.",
     },
     {
-        name: "Random Product",
-        link: "https://mcmodels.net/vendors/123/sirjain-models",
-        description: "Here is a description of this product"
+        name: "Potted Flowering Cacti",
+        link: "",
+        description: "Collection of five unique flowering cacti, each one with a different shape and a different decorated pot.",
     },
     {
-        name: "Random Product",
-        link: "https://mcmodels.net/vendors/123/sirjain-models",
-        description: "Here is a description of this product"
+        name: "Flashlights",
+        link: "",
+        description: "Here is a description of this product",
     }
 ]
 
 let animDelay = 0;
 const stores = document.getElementById("product-list");
 
-for (const store of productList) {
+for (const product of productList) {
     const div = document.createElement("product");
     div.className = "product";
     div.classList.add("product-view");
 
+    let productImage = product.name.toLowerCase().replaceAll(" ", "_")
+    console.log(productImage)
+
     div.innerHTML = 
     `
         <div class="project-card-title-div">
-            <p class="project-card-title">${store.name}</p>
+            <p class="project-card-title">${product.name}</p>
         </div>
-        <p class="project-description">${store.description}</p>
+        <img class="product-img" src="../images/products/${productImage}.png" alt="">
+        <p class="project-description" style="margin-top: 20px; text-align: center">${product.description}</p>
         <div class="spacer"></div>
         <div class="project-card-button-div">
-            <a target="_blank" href="${store.link}">
+            <a target="_blank" href="${product.link}">
                 <button class="project-card-button">Buy Product</button>
             </a>
         </div>
