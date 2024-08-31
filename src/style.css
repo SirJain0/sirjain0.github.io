@@ -495,7 +495,7 @@ input:focus {
 
     #product-list {
         display: grid;
-        grid-template-columns: 40% 40%;
+        grid-template-columns: 30% 30% 30%;
     }
 
     #portfolio-display {
