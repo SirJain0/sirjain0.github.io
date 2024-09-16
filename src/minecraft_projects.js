@@ -30,7 +30,7 @@ const projects = [
     {
         "name": "Perfect Plushies",
         "description": "Adds various decorative plushies to Minecraft, along with some Easter Eggs!",
-        "version": "1.11.1",
+        "version": "1.12.0",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
         "tag": "Mod" 
@@ -108,7 +108,7 @@ const projects = [
     {
         "name": "Cushy Pillows",
         "description": "Adds customizable, interactive pillows that you can sleep with, decorate, and throw at others!",
-        "version": "1.0.2",
+        "version": "1.0.3",
         "collaborators": "Daniel",
         "link": "https://www.curseforge.com/minecraft/mc-mods/cushy-pillows/",
         "tag": "Mod" 
