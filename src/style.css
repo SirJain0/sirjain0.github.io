@@ -77,6 +77,12 @@ body {
     padding-top: 5px;
 }
 
+.product-img {
+    border-radius: 20px;
+    max-width: 95%;
+    height: auto;
+}
+
 .project-link {
     color: #3f8bee;
     text-decoration: none;
@@ -111,11 +117,11 @@ body {
     padding-top: 40px;
 }
 
-#project-list, #store-list {
+#project-list, #product-list {
     display: grid;
 }
 
-.store {
+.product {
     margin: 20px;
 }
 
@@ -187,6 +193,10 @@ body {
     animation: title-text-anim 1000ms ease-out;
 }
 
+.product-buy-button {
+    width: 80%;
+}
+
 #main-pg-footer {
     width: 100%;
     text-align: center;
@@ -235,7 +245,7 @@ body {
     margin-top: 120px;
 }
 
-.view-project-card, .store-view {
+.view-project-card, .product-view {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,6 +302,12 @@ button {
         #465FDF
     );
     color: white;
+}
+
+.product-buy-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 button:hover {
@@ -376,7 +392,7 @@ input:focus {
     gap: 20px;
 }
 
-.tool-page-description {
+.page-description {
     color: gray;
     text-align: center;
     margin-left: 20px;
@@ -407,7 +423,7 @@ input:focus {
 
 /* Tablets */
 @media only screen and (min-width: 767px) {
-    #project-list, #store-list {
+    #project-list, #product-list {
         display: grid;
         grid-template-columns: 50% 50%;
     }
@@ -482,14 +498,18 @@ input:focus {
 
 /* Computers */
 @media only screen and (min-width: 1220px) {
+    .product-buy-button {
+        width: 90%;
+    }
+
     #project-list {
         display: grid;
         grid-template-columns: 33% 34% 33%;
     }
 
-    #store-list {
+    #product-list {
         display: grid;
-        grid-template-columns: 24% 24% 24%;
+        grid-template-columns: 40% 40%;
     }
 
     #portfolio-display {
@@ -536,7 +556,7 @@ input:focus {
 
 /* Wide screens */
 @media only screen and (min-width: 1880px) {
-    #project-list, #store-list {
+    #project-list, #product-list {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
     }

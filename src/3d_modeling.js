@@ -21,38 +21,50 @@ portfolio.append(div);
 
 // STORES
 
-const storeList = [
-    // {
-    //     name: "Sketchfab",
-    //     link: ""
-    // },
+const productList = [
     {
-        name: "MCModels",
-        link: "https://mcmodels.net/vendors/123/sirjain-models"
+        name: "Spirit Mob Balloons",
+        bbbLink: "https://builtbybit.com/resources/spirit-mob-balloons.53914/",
+        mcmodelsLink: "https://mcmodels.net/products/12699/spectra-studios-spirit-mob-balloons",
+        description: "Adds vibrant Spirit Mob balloons to your Minecraft builds for a festive, spooky touch!",
+        price: "10"
+    },
+    {
+        name: "Autumn Pumpkin Furniture Set",
+        bbbLink: "https://builtbybit.com/resources/autumn-pumpkin-furniture-set.53912/",
+        mcmodelsLink: "https://mcmodels.net/products/12701/spectra-studios-autumn-pumpkin-furniture",
+        description: "Cozy up your Minecraft builds with this pumpkin furniture pack, perfect for a warm autumn vibe!",
+        price: "14"
     }
 ]
 
 let animDelay = 0;
-const stores = document.getElementById("store-list");
+const stores = document.getElementById("product-list");
 
-for (const store of storeList) {
-    const div = document.createElement("store");
-    div.className = "store";
-    div.classList.add("store-view");
+for (const product of productList) {
+    const div = document.createElement("product");
+    div.className = "product";
+    div.classList.add("product-view");
+
+    let productImage = product.name.toLowerCase().replaceAll(" ", "_")
+    console.log(productImage)
 
     div.innerHTML = 
     `
         <div class="project-card-title-div">
-            <p class="project-card-title">${store.name}</p>
+            <p class="project-card-title">${product.name}</p>
         </div>
-        <div class="spacer"></div>
-        <div class="project-card-button-div">
-            <a target="_blank" href="${store.link}">
-                <button class="project-card-button" style="margin-top: -1px;">View Store</button>
+        <img class="product-img" src="../images/products/${productImage}.png" alt="">
+        <p class="project-description" style="margin-top: 20px; text-align: center">${product.description}</p>
+        <div class="product-buy-container">
+            <a target="_blank" href="${product.bbbLink}">
+                <button class="project-card-button product-buy-button">BuiltByBit</button>
+            </a>
+            <a target="_blank" href="${product.mcmodelsLink}">
+                <button class="project-card-button product-buy-button">MCModels</button>
             </a>
         </div>
     `;
-
 
     stores.append(div);
 
