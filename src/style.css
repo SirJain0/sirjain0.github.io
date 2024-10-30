@@ -193,6 +193,10 @@ body {
     animation: title-text-anim 1000ms ease-out;
 }
 
+.product-buy-button {
+    width: 80%;
+}
+
 #main-pg-footer {
     width: 100%;
     text-align: center;
@@ -298,6 +302,12 @@ button {
         #465FDF
     );
     color: white;
+}
+
+.product-buy-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 button:hover {
@@ -488,6 +498,10 @@ input:focus {
 
 /* Computers */
 @media only screen and (min-width: 1220px) {
+    .product-buy-button {
+        width: 90%;
+    }
+
     #project-list {
         display: grid;
         grid-template-columns: 33% 34% 33%;
@@ -495,7 +509,7 @@ input:focus {
 
     #product-list {
         display: grid;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 40% 40%;
     }
 
     #portfolio-display {

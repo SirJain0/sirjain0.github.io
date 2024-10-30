@@ -23,28 +23,18 @@ portfolio.append(div);
 
 const productList = [
     {
-        name: "Potted Cacti",
-        link: "",
-        description: "Collection of nine unique cacti, each one with a different shape and a different decorated pot.",
-        price: "2.97"
+        name: "Spirit Mob Balloons",
+        bbbLink: "https://builtbybit.com/resources/spirit-mob-balloons.53914/",
+        mcmodelsLink: "https://mcmodels.net/products/12699/spectra-studios-spirit-mob-balloons",
+        description: "Adds vibrant Spirit Mob balloons to your Minecraft builds for a festive, spooky touch!",
+        price: "10"
     },
     {
-        name: "Potted Flowering Cacti",
-        link: "",
-        description: "Collection of five unique flowering cacti, each one with a different shape and a different decorated pot.",
-        price: "3.72"
-    },
-    {
-        name: "Flashlights",
-        link: "",
-        description: "Collection of six low-poly flashlights (one for each primary and secondary color). The download also includes a grayscale version so you can produce any color you want.",
-        price: "2.97"
-    },
-    {
-        name: "Stools",
-        link: "",
-        description: "Collection of six low-poly, unique-looking stools. Each stool has a unique shape and texture to ensure diversity.",
-        price: "2.97"
+        name: "Autumn Pumpkin Furniture Set",
+        bbbLink: "https://builtbybit.com/resources/autumn-pumpkin-furniture-set.53912/",
+        mcmodelsLink: "https://mcmodels.net/products/12701/spectra-studios-autumn-pumpkin-furniture",
+        description: "Cozy up your Minecraft builds with this pumpkin furniture pack, perfect for a warm autumn vibe!",
+        price: "14"
     }
 ]
 
@@ -66,10 +56,12 @@ for (const product of productList) {
         </div>
         <img class="product-img" src="../images/products/${productImage}.png" alt="">
         <p class="project-description" style="margin-top: 20px; text-align: center">${product.description}</p>
-        <div class="spacer"></div>
-        <div class="project-card-button-div">
-            <a target="_blank" href="${product.link}">
-                <button class="project-card-button">Buy for $${product.price} USD</button>
+        <div class="product-buy-container">
+            <a target="_blank" href="${product.bbbLink}">
+                <button class="project-card-button product-buy-button">BuiltByBit</button>
+            </a>
+            <a target="_blank" href="${product.mcmodelsLink}">
+                <button class="project-card-button product-buy-button">MCModels</button>
             </a>
         </div>
     `;
