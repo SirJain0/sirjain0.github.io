@@ -115,7 +115,7 @@ const projects = [
     },
     {
         "name": "Creepy Decor",
-        "description": "Adds spooky, decorative, and functional furniture for extra 'Sc'",
+        "description": "Adds spooky, decorative, and functional furniture for extra 'flare and scare'! Originally made for the 2023 SpookyJam.",
         "version": "1.0.2",
         "collaborators": "JTK222",
         "link": "https://www.curseforge.com/minecraft/mc-mods/creepy-decor/",
