@@ -112,6 +112,14 @@ const projects = [
         "collaborators": "Daniel",
         "link": "https://www.curseforge.com/minecraft/mc-mods/cushy-pillows/",
         "tag": "Mod" 
+    },
+    {
+        "name": "Creepy Decor",
+        "description": "Adds spooky, decorative, and functional furniture for extra 'Sc'",
+        "version": "1.0.2",
+        "collaborators": "JTK222",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/creepy-decor/",
+        "tag": "Mod"
     }
 ]
 
