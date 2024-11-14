@@ -35,6 +35,12 @@ const productList = [
         mcmodelsLink: "https://mcmodels.net/products/12701/spectra-studios-autumn-pumpkin-furniture",
         description: "Cozy up your Minecraft builds with this pumpkin furniture pack, perfect for a warm autumn vibe!",
         price: "14"
+    },
+    {
+        name: "Candy Cane Furniture Set",
+        bbbLink: "https://builtbybit.com/resources/candy-cane-furniture-set.54482/",
+        description: "Cozy up your Minecraft builds with this pumpkin furniture pack, perfect for a warm autumn vibe!",
+        price: "14"
     }
 ]
 
@@ -49,22 +55,29 @@ for (const product of productList) {
     let productImage = product.name.toLowerCase().replaceAll(" ", "_")
     console.log(productImage)
 
-    div.innerHTML = 
-    `
+    let divHTML = `
         <div class="project-card-title-div">
             <p class="project-card-title">${product.name}</p>
         </div>
         <img class="product-img" src="../images/products/${productImage}.png" alt="">
         <p class="project-description" style="margin-top: 20px; text-align: center">${product.description}</p>
         <div class="product-buy-container">
-            <a target="_blank" href="${product.bbbLink}">
-                <button class="project-card-button product-buy-button">BuiltByBit</button>
-            </a>
+        <a target="_blank" href="${product.bbbLink}">
+            <button class="project-card-button product-buy-button">BuiltByBit</button>
+        </a>
+    `
+
+    if (product.mcmodelsLink != null) {
+        divHTML += `
             <a target="_blank" href="${product.mcmodelsLink}">
-                <button class="project-card-button product-buy-button">MCModels</button>
+                    <button class="project-card-button product-buy-button">MCModels</button>
             </a>
-        </div>
-    `;
+        `
+    }
+
+    divHTML += `</div>`;
+
+    div.innerHTML = divHTML;
 
     stores.append(div);
 
