@@ -39,8 +39,16 @@ const productList = [
     {
         name: "Candy Cane Furniture Set",
         bbbLink: "https://builtbybit.com/resources/candy-cane-furniture-set.54482/",
+        mcmodelsLink: "https://mcmodels.net/products/12876/spectra-studios-candy-cane-furniture-set-vol-1",
         description: "Cozy up your Minecraft builds with this pumpkin furniture pack, perfect for a warm autumn vibe!",
-        price: "14"
+        price: "7"
+    },
+    {
+        name: "Gingerbread Furniture Set",
+        bbbLink: "https://builtbybit.com/resources/gingerbread-furniture-set.55111/",
+        mcmodelsLink: "https://mcmodels.net/products/12945/spectra-studios-gingerbread-set",
+        description: "Festive Minecraft furniture and decorations for the holiday season!",
+        price: "10"
     }
 ]
 
