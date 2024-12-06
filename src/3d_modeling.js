@@ -70,18 +70,18 @@ for (const product of productList) {
         <img class="product-img" src="../images/products/${productImage}.png" alt="">
         <p class="project-description" style="margin-top: 20px; text-align: center">${product.description}</p>
         <div class="product-buy-container">
-        <a target="_blank" href="${product.bbbLink}">
-            <button class="project-card-button product-buy-button">BuiltByBit</button>
+        <a target="_blank" href="${product.mcmodelsLink}">
+            <button class="project-card-button product-buy-button">MCModels</button>
         </a>
     `
 
-    if (product.mcmodelsLink != null) {
-        divHTML += `
-            <a target="_blank" href="${product.mcmodelsLink}">
-                    <button class="project-card-button product-buy-button">MCModels</button>
-            </a>
-        `
-    }
+    // if (product.mcmodelsLink != null) {
+    //     divHTML += `
+    //         <a target="_blank" href="${product.mcmodelsLink}">
+    //                 <button class="project-card-button product-buy-button">MCModels</button>
+    //         </a>
+    //     `
+    // }
 
     divHTML += `</div>`;
 
