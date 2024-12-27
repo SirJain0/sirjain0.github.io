@@ -120,6 +120,13 @@ const projects = [
         "collaborators": "JTK222",
         "link": "https://www.curseforge.com/minecraft/mc-mods/creepy-decor/",
         "tag": "Mod"
+    },
+    {
+        "name": "Stunning Statues",
+        "description": "Adds elegant stone and mossy stone statues for decoration purposes.",
+        "version": "1.0.1",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/stunning-statues/",
+        "tag": "Mod"
     }
 ]
 
