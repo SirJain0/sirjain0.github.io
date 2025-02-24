@@ -77,7 +77,7 @@ function generateProductList(className, product, productList) {
             <p class="project-card-title">${product.name}</p>
         </div>
         <img class="product-img" src="../images/products/${productImage}.png" alt="">
-        <p class="project-description" style="margin-top: 20px; text-align: center">${product.description}</p>
+        <p class="project-description" style="margin: 20px 10px; text-align: center">${product.description}</p>
         <div class="product-buy-container">
     `
 
