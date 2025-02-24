@@ -117,7 +117,7 @@ body {
     padding-top: 40px;
 }
 
-#project-list, #product-list {
+#project-list, #sps-product-list, #ss-product-list {
     display: grid;
 }
 
@@ -193,10 +193,6 @@ body {
     animation: title-text-anim 1000ms ease-out;
 }
 
-.product-buy-button {
-    width: 80%;
-}
-
 #main-pg-footer {
     width: 100%;
     text-align: center;
@@ -252,6 +248,10 @@ body {
     background-color: var(--translucent-bg-color);
     border-radius: 20px;
     padding: 10px 20px;
+}
+
+.product-view {
+    margin: 20px;
 }
 
 .view-project-card:nth-child(1),
@@ -423,7 +423,12 @@ input:focus {
 
 /* Tablets */
 @media only screen and (min-width: 767px) {
-    #project-list, #product-list {
+    #project-list, #ss-product-list {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #sps-product-list {
         display: grid;
         grid-template-columns: 50% 50%;
     }
@@ -498,18 +503,20 @@ input:focus {
 
 /* Computers */
 @media only screen and (min-width: 1220px) {
-    .product-buy-button {
-        width: 90%;
-    }
-
     #project-list {
         display: grid;
         grid-template-columns: 33% 34% 33%;
     }
 
-    #product-list {
+
+    #ss-product-list {
+         display: grid;
+         grid-template-columns: 40% 40%;
+    }
+
+    #sps-product-list {
         display: grid;
-        grid-template-columns: 40% 40%;
+        grid-template-columns: 33% 33% 33%;
     }
 
     #portfolio-display {
@@ -556,10 +563,14 @@ input:focus {
 
 /* Wide screens */
 @media only screen and (min-width: 1880px) {
-    #project-list, #product-list {
+    #project-list, #ss-product-list {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
     }
+    #project-list, #sps-product-list {
+         display: grid;
+         grid-template-columns: 20% 20% 20% 20% 20%;
+     }
 }
 
 /* Animations */

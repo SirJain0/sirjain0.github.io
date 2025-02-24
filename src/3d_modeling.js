@@ -19,49 +19,58 @@ div.innerHTML = `
 
 portfolio.append(div);
 
-// STORES
+// Silent Princess Studios store products
+const silentPrincessStudiosProductList = [
+    {
+        name: "Flower Garden Furniture",
+        mcmodelsLink: "https://mcmodels.net/products/13562/tenshi-and-sirjains-flower-garden-furniture",
+        description: "Decorate your own grand garden with wonderous Flower Garden Furniture. This pack contains 34 Furniture Pieces to help you build the garden of your dreams.",
+        price: "19.95"
+    }
+]
 
-const productList = [
+// Spectra Studios store products
+const spectraStudiosProductList = [
     {
         name: "Spirit Mob Balloons",
-        bbbLink: "https://builtbybit.com/resources/spirit-mob-balloons.53914/",
-        mcmodelsLink: "https://mcmodels.net/products/12699/spectra-studios-spirit-mob-balloons",
         description: "Adds vibrant Spirit Mob balloons to your Minecraft builds for a festive, spooky touch!",
         price: "10"
     },
     {
         name: "Autumn Pumpkin Furniture Set",
-        bbbLink: "https://builtbybit.com/resources/autumn-pumpkin-furniture-set.53912/",
-        mcmodelsLink: "https://mcmodels.net/products/12701/spectra-studios-autumn-pumpkin-furniture",
         description: "Cozy up your Minecraft builds with this pumpkin furniture pack, perfect for a warm autumn vibe!",
         price: "14"
     },
     {
         name: "Candy Cane Furniture Set",
-        bbbLink: "https://builtbybit.com/resources/candy-cane-furniture-set.54482/",
-        mcmodelsLink: "https://mcmodels.net/products/12876/spectra-studios-candy-cane-furniture-set-vol-1",
         description: "Cozy up your Minecraft builds with this pumpkin furniture pack, perfect for a warm autumn vibe!",
         price: "7"
     },
     {
         name: "Gingerbread Furniture Set",
-        bbbLink: "https://builtbybit.com/resources/gingerbread-furniture-set.55111/",
-        mcmodelsLink: "https://mcmodels.net/products/12945/spectra-studios-gingerbread-set",
         description: "Festive Minecraft furniture and decorations for the holiday season!",
         price: "10"
     }
 ]
 
 let animDelay = 0;
-const stores = document.getElementById("product-list");
+const spsProductList = document.getElementById("sps-product-list");
+const ssProductList = document.getElementById("ss-product-list");
 
-for (const product of productList) {
-    const div = document.createElement("product");
-    div.className = "product";
+for (const product of silentPrincessStudiosProductList) {
+    generateProductList("silentPrincesStudiosProduct", product, spsProductList)
+}
+
+for (const product of spectraStudiosProductList) {
+    generateProductList("spectraStudiosProduct", product, ssProductList)
+}
+
+function generateProductList(className, product, productList) {
+    const div = document.createElement(className);
+    div.className = className;
     div.classList.add("product-view");
 
     let productImage = product.name.toLowerCase().replaceAll(" ", "_")
-    console.log(productImage)
 
     let divHTML = `
         <div class="project-card-title-div">
@@ -70,24 +79,19 @@ for (const product of productList) {
         <img class="product-img" src="../images/products/${productImage}.png" alt="">
         <p class="project-description" style="margin-top: 20px; text-align: center">${product.description}</p>
         <div class="product-buy-container">
-        <a target="_blank" href="${product.mcmodelsLink}">
-            <button class="project-card-button product-buy-button">MCModels</button>
-        </a>
     `
 
-    // if (product.mcmodelsLink != null) {
-    //     divHTML += `
-    //         <a target="_blank" href="${product.mcmodelsLink}">
-    //                 <button class="project-card-button product-buy-button">MCModels</button>
-    //         </a>
-    //     `
-    // }
+    if (product.mcmodelsLink != null) {
+        divHTML += `
+            <a target="_blank" href="${product.mcmodelsLink}">
+                    <button class="project-card-button product-buy-button">MCModels</button>
+            </a>
+        `
+    }
 
     divHTML += `</div>`;
-
     div.innerHTML = divHTML;
-
-    stores.append(div);
+    productList.append(div);
 
     div.style.cssText += `
         transform: translateY(-3%);
