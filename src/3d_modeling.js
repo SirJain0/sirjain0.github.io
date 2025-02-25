@@ -33,21 +33,25 @@ const silentPrincessStudiosProductList = [
 const spectraStudiosProductList = [
     {
         name: "Spirit Mob Balloons",
+        mcmodelsLink: "https://mcmodels.net/products/12699/spectra-studios-spirit-mob-balloons",
         description: "Adds vibrant Spirit Mob balloons to your Minecraft builds for a festive, spooky touch!",
         price: "10"
     },
     {
         name: "Autumn Pumpkin Furniture Set",
+        mcmodelsLink: "https://mcmodels.net/products/12701/spectra-studios-autumn-pumpkin-furniture",
         description: "Cozy up your Minecraft builds with this pumpkin furniture pack, perfect for a warm autumn vibe!",
         price: "14"
     },
     {
         name: "Candy Cane Furniture Set",
+        mcmodelsLink: "https://mcmodels.net/products/12876/spectra-studios-candy-cane-furniture-set-vol-1",
         description: "Cozy up your Minecraft builds with this pumpkin furniture pack, perfect for a warm autumn vibe!",
         price: "7"
     },
     {
         name: "Gingerbread Furniture Set",
+        mcmodelsLink: "https://mcmodels.net/products/12945/spectra-studios-gingerbread-set",
         description: "Festive Minecraft furniture and decorations for the holiday season!",
         price: "10"
     }
@@ -77,7 +81,7 @@ function generateProductList(className, product, productList) {
             <p class="project-card-title">${product.name}</p>
         </div>
         <img class="product-img" src="../images/products/${productImage}.png" alt="">
-        <p class="project-description" style="margin: 20px 10px; text-align: center">${product.description}</p>
+        <p class="project-description" style="margin-top: 20px; text-align: center">${product.description}</p>
         <div class="product-buy-container">
     `
 
