@@ -423,16 +423,10 @@ input:focus {
 
 /* Tablets */
 @media only screen and (min-width: 767px) {
-    #project-list, #ss-product-list {
+    #project-list, #ss-product-list, #sps-product-list {
         display: grid;
         grid-template-columns: 50% 50%;
     }
-
-    #sps-product-list {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-
     .project-link {
         color: #3f8bee;
         text-decoration: none;
@@ -509,14 +503,9 @@ input:focus {
     }
 
 
-    #ss-product-list {
+    #ss-product-list, #sps-product-list {
          display: grid;
          grid-template-columns: 40% 40%;
-    }
-
-    #sps-product-list {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
     }
 
     #portfolio-display {
@@ -563,14 +552,10 @@ input:focus {
 
 /* Wide screens */
 @media only screen and (min-width: 1880px) {
-    #project-list, #ss-product-list {
+    #project-list, #ss-product-list, #sps-product-list {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
     }
-    #project-list, #sps-product-list {
-         display: grid;
-         grid-template-columns: 20% 20% 20% 20% 20%;
-     }
 }
 
 /* Animations */
