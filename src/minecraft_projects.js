@@ -124,7 +124,7 @@ const projects = [
     {
         "name": "Stunning Statues",
         "description": "Adds elegant stone and mossy stone statues for decoration purposes.",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "link": "https://www.curseforge.com/minecraft/mc-mods/stunning-statues/",
         "tag": "Mod"
     }
