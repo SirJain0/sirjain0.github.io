@@ -26,6 +26,12 @@ const silentPrincessStudiosProductList = [
         mcmodelsLink: "https://mcmodels.net/products/13562/tenshi-and-sirjains-flower-garden-furniture",
         description: "Decorate your own grand garden with wonderous Flower Garden Furniture. This pack contains 34 Furniture Pieces to help you build the garden of your dreams.",
         price: "19.95"
+    },
+    {
+        name: "Zen Garden Furniture",
+        mcmodelsLink: "https://mcmodels.net/products/13880/tenshi-and-sirjains-zen-garden-furniture",
+        description: "Decorate your own peaceful pond and garden with a complete set of Zen Garden Furniture. This pack contains 23 Furniture Pieces to help you build the garden of your dreams.",
+        price: "11.95"
     }
 ]
 
