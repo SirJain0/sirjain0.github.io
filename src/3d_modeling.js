@@ -32,6 +32,18 @@ const silentPrincessStudiosProductList = [
         mcmodelsLink: "https://mcmodels.net/products/13880/tenshi-and-sirjains-zen-garden-furniture",
         description: "Decorate your own peaceful pond and garden with a complete set of Zen Garden Furniture. This pack contains 23 Furniture Pieces to help you build the garden of your dreams.",
         price: "11.95"
+    },
+    {
+        name: "Divine Archive Relics",
+        mcmodelsLink: "https://mcmodels.net/products/13885/tenshi-and-sirjains-divine-archive-relics",
+        description: "Unlock ancient wisdom with the Divine Archive set—relics inscribed with celestial knowledge and radiant magic, preserved from a bygone era of sacred power.",
+        price: "7.95"
+    },
+    {
+        name: "Lunar Ossuary Relics",
+        mcmodelsLink: "https://mcmodels.net/products/13884/tenshi-and-sirjains-lunar-ossuary-relics",
+        description: "Channel the forgotten power of the moonlit dead with the Lunar Ossuary relics—an ethereal collection steeped in bone, starlight, and solemn reverence for those long passed.",
+        price: "7.95"
     }
 ]
 
