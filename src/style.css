@@ -88,7 +88,7 @@ body {
     text-decoration: none;
     margin: 25px 20px 0px 20px;
     background-color: var(--translucent-bg-color-2);
-    padding: 15px 15px 10px 15px;
+    padding: 12px 15px 10px 15px;
     border-radius: 15px;
     transition: all .1s;
     max-height: 30px;

@@ -28,20 +28,11 @@ const projects = [
         "tag": "Mod" 
     },
     {
-        "name": "Perfect Plushies",
-        "description": "Adds various decorative plushies to Minecraft, along with some Easter Eggs!",
-        "version": "1.12.0",
-        "collaborators": "Nyfaria",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
-        "tag": "Mod" 
-    },
-    {
-        "name": "Herespawn",
-        "description": "Adds a button to the death screen which respawns player to death location.",
-        "version": "1.1.2",
-        "collaborators": "Nyfaria",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/herespawn/",
-        "tag": "Mod" 
+        "name": "Stunning Statues",
+        "description": "Adds elegant stone and mossy stone statues for decoration purposes.",
+        "version": "1.0.2",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/stunning-statues/",
+        "tag": "Mod"
     },
     {
         "name": "More Potions",
@@ -56,6 +47,14 @@ const projects = [
         "version": "1.0.2",
         "link": "https://www.curseforge.com/minecraft/mc-mods/ez-healing/",
         "tag": "Mod" 
+    },
+    {
+        "name": "Perfect Plushies",
+        "description": "Adds various decorative plushies to Minecraft, along with some Easter Eggs!",
+        "version": "1.12.0",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
+        "tag": "Mod"
     },
     {
         "name": "Bats Galore",
@@ -114,18 +113,19 @@ const projects = [
         "tag": "Mod" 
     },
     {
+        "name": "Herespawn",
+        "description": "Adds a button to the death screen which respawns player to death location.",
+        "version": "1.1.2",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/herespawn/",
+        "tag": "Mod"
+    },
+    {
         "name": "Creepy Decor",
         "description": "Adds spooky, decorative, and functional furniture for extra 'flare and scare'! Originally made for the 2023 SpookyJam.",
         "version": "1.0.2",
         "collaborators": "JTK222",
         "link": "https://www.curseforge.com/minecraft/mc-mods/creepy-decor/",
-        "tag": "Mod"
-    },
-    {
-        "name": "Stunning Statues",
-        "description": "Adds elegant stone and mossy stone statues for decoration purposes.",
-        "version": "1.0.2",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/stunning-statues/",
         "tag": "Mod"
     }
 ]
@@ -142,23 +142,27 @@ for (const project of projects) {
 
     let innerHTML = `
         <div class="project-header">
-        <h3 class="project-title">${project.name}</h2>
+        <h2 class="project-title">${project.name}</h2>
         <div class="spacer"></div>
     `
 
     innerHTML += `
         <a class="project-link" href="${project.link}" target="_blank">
-            <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
+            <span class="material-symbols-outlined" style="font-size: 18px;">open_in_new</span>
         </a>
         </div>
     `
 
+    innerHTML += `
+            <img class="product-img" src="../images/minecraft_banners/${project.name.toLowerCase().replaceAll(" ", "_") + "_banner"}.png" alt="" style="margin: 0 20px">
+    `
+
     if (project.collaborators) innerHTML += `
-        <p class="project-authors">With ${project.collaborators}</p>
+        <p class="project-authors" style="margin-top: 25px; margin-bottom: -5px">With ${project.collaborators}</p>
     `
 
     innerHTML += `
-        <p class="project-description">${project.description}</p>
+        <p class="project-description" style="margin-top: 20px; margin-bottom: -20px">${project.description}</p>
         <div class="spacer"></div>
         <div class="project-footer">
             <span class="project-version">Version: ${project.version}</span>

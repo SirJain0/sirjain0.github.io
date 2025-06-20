@@ -50,7 +50,7 @@ for (const project of projects) {
 
     innerHTML += `
         <a class="project-link" href="${project.link}" target="_blank">
-            <span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
+            <span class="material-symbols-outlined" style="font-size: 18px;">open_in_new</span>
         </a>
         </div>
     `
