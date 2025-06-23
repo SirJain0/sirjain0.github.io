@@ -115,6 +115,7 @@ body {
     width: 100%;
     text-align: center;
     padding-top: 40px;
+    animation: grow-fade-in 1000ms ease-in-out
 }
 
 #project-list, #sps-product-list, #ss-product-list {
@@ -173,7 +174,7 @@ body {
     text-align: center;
     margin-top: 100px;
 
-    animation: title-text-anim 1000ms ease-out;
+    animation: grow-fade-in 1000ms ease-out;
 }
 
 #description {
@@ -190,7 +191,7 @@ body {
     margin: 20px 0px 20px 20px;
     display: inline-block;
     align-items: center;
-    animation: title-text-anim 1000ms ease-out;
+    animation: grow-fade-in 1000ms ease-out;
 }
 
 #main-pg-footer {
@@ -392,6 +393,7 @@ button:hover {
     border-radius: 20px;
     padding: 20px;
     margin-top: 60px;
+    animation: delay-fade-in 1000ms ease-in-out;
 }
 
 input {
@@ -673,7 +675,7 @@ input:focus {
     }
 }
 
-@keyframes title-text-anim {
+@keyframes grow-fade-in {
     0% {
         transform: scale(0.95);
         opacity: 0;
@@ -681,6 +683,30 @@ input:focus {
 
     100% {
         transform: scale(1);
+        opacity: 100;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes delay-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 100;
     }
 }
