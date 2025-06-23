@@ -260,7 +260,7 @@ body {
     padding: 20px;
     border-radius: 20px;
 
-    animation: delay-fade-in 850ms ease-in-out
+    animation: grow-delay-fade-in 850ms ease-in-out
 }
 
 .view-project-card, .product-view {
