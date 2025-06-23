@@ -115,7 +115,7 @@ body {
     width: 100%;
     text-align: center;
     padding-top: 40px;
-    animation: grow-fade-in 1000ms ease-in-out
+    animation: grow-fade-in 850ms ease-in-out
 }
 
 #project-list, #sps-product-list, #ss-product-list {
@@ -133,7 +133,7 @@ body {
     color: #ADADAD;
     display: flex;
     flex-direction: column;
-    animation: project-ease-in 1000ms ease-out;
+    animation: project-ease-in 850ms ease-out;
 }
 
 .portfolio-view {
@@ -145,7 +145,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    animation: project-ease-in 1000ms ease-out;
+    animation: project-ease-in 850ms ease-out;
 }
 
 .back-button {
@@ -174,7 +174,7 @@ body {
     text-align: center;
     margin-top: 100px;
 
-    animation: grow-fade-in 1000ms ease-out;
+    animation: grow-fade-in 850ms ease-out;
 }
 
 #description {
@@ -191,7 +191,7 @@ body {
     margin: 20px 0px 20px 20px;
     display: inline-block;
     align-items: center;
-    animation: grow-fade-in 1000ms ease-out;
+    animation: grow-fade-in 850ms ease-out;
 }
 
 #main-pg-footer {
@@ -259,6 +259,8 @@ body {
     background-color: var(--translucent-bg-color);
     padding: 20px;
     border-radius: 20px;
+
+    animation: delay-fade-in 850ms ease-in-out
 }
 
 .view-project-card, .product-view {
@@ -287,14 +289,14 @@ body {
 .view-project-card:nth-child(1),
 .view-project-card:nth-child(2) {
     opacity: 0;
-    animation: title-card-top-ease-in 1000ms ease-in-out;
+    animation: title-card-top-ease-in 850ms ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .view-project-card:nth-child(3),
 .view-project-card:nth-child(4) {
     opacity: 0;
-    animation: title-card-bottom-ease-in 1000ms ease-in-out;
+    animation: title-card-bottom-ease-in 850ms ease-in-out;
     animation-fill-mode: forwards;
 }
 
@@ -362,9 +364,9 @@ button:hover {
     padding: 20px;
     border-radius: 20px;
     width: 80%;
-    margin: 0 auto;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px auto 0;
+    animation: grow-delay-fade-in 850ms ease-in-out;
 }
 
 .tool-title {
@@ -393,7 +395,7 @@ button:hover {
     border-radius: 20px;
     padding: 20px;
     margin-top: 60px;
-    animation: delay-fade-in 1000ms ease-in-out;
+    animation: grow-fade-in 850ms ease-in-out;
 }
 
 input {
@@ -430,6 +432,7 @@ input:focus {
     margin-right: 20px;
     margin-top: -10px;
     justify-content: center;
+    animation: grow-fade-in 850ms ease-in-out;
 }
 
 .page-text {
@@ -438,6 +441,7 @@ input:focus {
     line-height: 32px;
     font-size: 18px;
     font-weight: 350;
+    animation: fade-in 850ms ease-in-out;
 }
 
 /* Scrollbar handling */
@@ -677,7 +681,7 @@ input:focus {
 
 @keyframes grow-fade-in {
     0% {
-        transform: scale(0.95);
+        transform: scale(0.98);
         opacity: 0;
     }
 
@@ -708,5 +712,22 @@ input:focus {
 
     100% {
         opacity: 100;
+    }
+}
+
+@keyframes grow-delay-fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+
+    20% {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+
+    100% {
+        opacity: 100;
+        transform: scale(1);
     }
 }
