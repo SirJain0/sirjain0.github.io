@@ -13,7 +13,7 @@ div.innerHTML = `
         <span class="material-symbols-outlined" style="font-size: 22px;">open_in_new</span>
     </a>
     </div>
-    <p class="project-description" style="font-size: 18px;">My portfolio containing my best 3D modeling work, with effective media and descriptions.</p>
+    <p class="project-description" style="font-size: 18px;">View my proudest work in 3D modeling and pixel art. All art is designed and made by me.</p>
     <div class="spacer" style="margin-top: 25px;"></div>
 `
 
