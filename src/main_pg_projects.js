@@ -1,4 +1,4 @@
-const views = [
+const projectCategories = [
     {
         "title": "Blockbench Projects",
         "description": "Includes plugins that extend the Blockbench functionality and themes that touch up the appearance of the program.",
@@ -13,18 +13,27 @@ const views = [
         "title": "3D Modeling",
         "description": "All websites and projects related to 3D modeling, including a portfolio and sites where I sell my work.",
         "path": "3d_modeling/"
+    }
+]
+
+const miscProjects = [
+    {
+        "title": "APA Citation Generator",
+        "description": "A web-based tool that generates a fully-formatted APA citation from some parameters.",
+        "path": "citation_generator/"
     },
     {
-        "title": "Miscellaneous",
-        "description": "Miscellaneous projects and things I have made which don't fall under any category.",
-        "path": "misc_projects/"
+        "title": "Compoundly",
+        "description": "An iOS app that calculates the compounded annual growth rate (CAGR) from a start and target value.",
+        "path": "compoundly/"
     }
 ]
 
 // Get the view-projects-view element
-const projectList = document.getElementById("view-projects-view")
+const generalProjectList = document.getElementById("view-projects-view")
+const miscProjectList = document.getElementById("view-misc-projects-view")
 
-for (const view of views) {
+for (const view of projectCategories) {
     const div = document.createElement("project-type");
     div.className = "project-type";
     div.classList.add("view-project-card");
@@ -43,5 +52,27 @@ for (const view of views) {
         </div>
     `;
 
-    projectList.append(div)
+    generalProjectList.append(div)
+}
+
+for (const view of miscProjects) {
+    const div = document.createElement("project-type");
+    div.className = "project-type";
+    div.classList.add("view-project-card");
+
+    div.innerHTML =
+        `
+        <div class="project-card-title-div">
+            <p class="project-card-title">${view.title}</p>
+        </div>
+        <p class="project-description" style="text-align: center;">${view.description}</p>
+        <div class="spacer"></div>
+        <div class="project-card-button-div">
+            <a href="misc_projects/${view.path}">
+                <button class="project-card-button">View Project</button>
+            </a>
+        </div>
+    `;
+
+    miscProjectList.append(div)
 }

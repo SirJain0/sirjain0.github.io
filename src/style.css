@@ -233,21 +233,50 @@ body {
     height: 1px;
 }
 
-#view-projects-view {
+#view-projects-view, #view-misc-projects-view {
     display: grid;
     grid-template-columns: 80%;
     gap: 40px;
     justify-content: center;
+}
+
+#view-projects-view {
     margin-top: 120px;
+}
+
+#view-misc-projects-view {
+    margin-top: 60px;
+}
+
+.compoundly-imgs {
+    margin: 0px 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--translucent-bg-color);
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .view-project-card, .product-view {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: var(--translucent-bg-color);
     border-radius: 20px;
     padding: 10px 20px;
+}
+
+.compoundly-img {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    justify-content: center;
 }
 
 .product-view {
@@ -401,6 +430,14 @@ input:focus {
     justify-content: center;
 }
 
+.page-text {
+    color: #adadad;
+    margin: 20px 40px;
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 350;
+}
+
 /* Scrollbar handling */
 ::-webkit-scrollbar {
     width: 15px;
@@ -423,6 +460,10 @@ input:focus {
 
 /* Tablets */
 @media only screen and (min-width: 767px) {
+    .page-text {
+        margin: 20px 80px;
+    }
+
     #project-list, #ss-product-list, #sps-product-list {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -437,8 +478,13 @@ input:focus {
         margin-left: 20px;
     }
     
-    #view-projects-view {
+    #view-projects-view, #view-misc-projects-view {
         grid-template-columns: 40% 40%;
+    }
+
+    .compoundly-imgs {
+        margin: 0px 80px;
+        grid-template-columns: auto auto;
     }
 
     .project-title {
@@ -502,6 +548,9 @@ input:focus {
         grid-template-columns: 33% 34% 33%;
     }
 
+    .page-text{
+        margin: 20px 140px;
+    }
 
     #ss-product-list, #sps-product-list {
          display: grid;
@@ -514,10 +563,15 @@ input:focus {
         margin: auto;
     }
 
-    #view-projects-view {
-        grid-template-columns: 30% 30%;
+    #view-projects-view, #view-misc-projects-view{
+        grid-template-columns: 25% 25% 25%;
     }
-    
+
+    .compoundly-imgs {
+        margin: 0px 140px;
+        grid-template-columns: auto auto auto auto;
+    }
+
     .project-title {
         inline-size: 300px;
         word-break: break-all;
