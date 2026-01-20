@@ -1,5 +1,36 @@
 const projects = [
     {
+        "name": "Perfect Plushies",
+        "description": "Adds various decorative plushies to Minecraft, along with some Easter Eggs!",
+        "version": "1.13.3",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
+        "tag": "Mod"
+    },
+    {
+        "name": "Perfect Birbs",
+        "description": "Adds many bird plushies to the game!",
+        "version": "1.1.0",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-birbs/",
+        "tag": "Mod"
+    },
+    {
+        "name": "Jain's Desserts",
+        "description": "Mod that adds a bunch of random desserts (common and unique) to Minecraft!",
+        "version": "2.0.0",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/jains-desserts/",
+        "tag": "Mod"
+    },
+    {
+        "name": "Bats Galore",
+        "description": "Adds many bats with unique loot for spooky season. Originally made for 2023 SpookyJam!",
+        "version": "1.2.3",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/spooky-bats/",
+        "tag": "Mod"
+    },
+    {
         "name": "Extensive Diamonds",
         "description": "Mod that adds three new diamond types to Minecraft!",
         "version": "1.3.6",
@@ -19,13 +50,6 @@ const projects = [
         "version": "1.0.5",
         "link": "https://www.curseforge.com/minecraft/mc-mods/convenient-hitboxes/",
         "tag": "Mod"
-    },
-    {
-        "name": "Jain's Desserts",
-        "description": "Mod that adds a bunch of random desserts (common and unique) to Minecraft!",
-        "version": "2.0.0",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/jains-desserts/",
-        "tag": "Mod" 
     },
     {
         "name": "Stunning Statues",
@@ -49,20 +73,12 @@ const projects = [
         "tag": "Mod" 
     },
     {
-        "name": "Perfect Plushies",
-        "description": "Adds various decorative plushies to Minecraft, along with some Easter Eggs!",
-        "version": "1.13.3",
+        "name": "Fancy Frames",
+        "description": "Adds material-based frames to customize paintings and item frames.",
+        "version": "1.0.0",
         "collaborators": "Nyfaria",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-plushies/",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/fancy-frames/",
         "tag": "Mod"
-    },
-    {
-        "name": "Bats Galore",
-        "description": "Adds many bats with unique loot for spooky season. Originally made for 2023 SpookyJam!",
-        "version": "1.2.3",
-        "collaborators": "Nyfaria",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/spooky-bats/",
-        "tag": "Mod" 
     },
     {
         "name": "Gifts Of Giving",
@@ -86,14 +102,6 @@ const projects = [
         "version": "1.0.0",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/water-balloon/",
-        "tag": "Mod" 
-    },
-    {
-        "name": "Perfect Birbs",
-        "description": "Adds many bird plushies to the game!",
-        "version": "1.1.0",
-        "collaborators": "Nyfaria",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/perfect-birbs/",
         "tag": "Mod" 
     },
     {
