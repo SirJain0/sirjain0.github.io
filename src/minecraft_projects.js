@@ -89,27 +89,11 @@ const projects = [
         "tag": "Mod" 
     },
     {
-        "name": "Pet Shop",
-        "description": "Adds various pets with realistic behavior and shops which sell pet-related items and cosmetics!",
-        "version": "0.1.3 Beta",
-        "collaborators": "Nyfaria",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/pet-shop/",
-        "tag": "Mod" 
-    },
-    {
         "name": "Water Balloon",
         "description": "Adds Water Balloons to Minecraft so you can have some summer fun with your friends!",
         "version": "1.0.0",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/water-balloon/",
-        "tag": "Mod" 
-    },
-    {
-        "name": "Powers of Spite",
-        "description": "A superpower mod where you can inject yourself with a magical serum to obtain random powers!",
-        "version": "0.1.2 Beta",
-        "collaborators": "Nyfaria",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/powers-of-spite/",
         "tag": "Mod" 
     },
     {
@@ -135,7 +119,23 @@ const projects = [
         "collaborators": "JTK222",
         "link": "https://www.curseforge.com/minecraft/mc-mods/creepy-decor/",
         "tag": "Mod"
-    }
+    },
+    {
+        "name": "Pet Shop",
+        "description": "Adds various pets with realistic behavior and shops which sell pet-related items and cosmetics!",
+        "version": "0.1.3 Beta",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/pet-shop/",
+        "tag": "Mod"
+    },
+    {
+        "name": "Powers of Spite",
+        "description": "A superpower mod where you can inject yourself with a magical serum to obtain random powers!",
+        "version": "0.1.2 Beta",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/powers-of-spite/",
+        "tag": "Mod"
+    },
 ]
 
 // Get the project-list element
