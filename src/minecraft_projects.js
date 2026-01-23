@@ -31,6 +31,14 @@ const projects = [
         "tag": "Mod"
     },
     {
+        "name": "Another Quality Ore Set",
+        "description": "Adds new, powerful tool and armor sets. Includes custom tools, full-armor effects, and a powerful bonus set!",
+        "version": "2.0.0",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/another-quality-ore-set",
+        "tag": "Mod"
+    },
+    {
         "name": "Extensive Diamonds",
         "description": "Mod that adds three new diamond types to Minecraft!",
         "version": "1.3.6",
@@ -59,7 +67,7 @@ const projects = [
         "tag": "Mod"
     },
     {
-        "name": "More Potions",
+        "name": "More Potions!",
         "description": "Adds a few new potions and tipped arrows to Minecraft based on existing status effects!",
         "version": "2.0.1",
         "link": "https://curseforge.com/minecraft/mc-mods/more-potions-items-fabric",
