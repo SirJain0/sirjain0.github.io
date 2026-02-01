@@ -44,30 +44,6 @@ const silentPrincessStudiosProductList = [
         mcmodelsLink: "https://mcmodels.net/products/13884/tenshi-and-sirjains-lunar-ossuary-relics",
         description: "Channel the forgotten power of the moonlit dead with the Lunar Ossuary relics—an ethereal collection steeped in bone, starlight, and solemn reverence for those long passed.",
         price: "7.95"
-    },
-    {
-        name: "Emeralite Collection",
-        mcmodelsLink: "https://mcmodels.net/products/14663/tenshi-and-sirjains-emeralite-collection",
-        description: "This verdant collection channels the ancient wisdom of nature itself, each piece humming with the life force of a thousand growing seasons and the protective fury of the wild untamed.",
-        price: "8.95"
-    },
-    {
-        name: "Ignitium Collection",
-        mcmodelsLink: "https://mcmodels.net/products/14664/tenshi-and-sirjains-ignitum-collection",
-        description: "This blazing arsenal carries the passionate heart of creation's forge, where phoenix tears cooled into weapons of eternal flame. Each piece burns with the intensity of a dying star, yet never consumes the worthy soul who claims its power.",
-        price: "8.95"
-    },
-    {
-        name: "Cerulium Collection",
-        mcmodelsLink: "https://mcmodels.net/products/14662/tenshi-and-sirjains-cerulium-collection",
-        description: "Forged from crystallized starlight that fell into primordial waters, cerulium equipment pulses with celestial energy, whispering secrets of distant constellations to those brave enough to wield its cosmic might.",
-        price: "8.95"
-    },
-    {
-        name: "Telos Collection",
-        mcmodelsLink: "https://mcmodels.net/products/14665/tenshi-and-sirjains-telos-collection",
-        description: "This final collection represents the ultimate evolution of mortal ambition - tools and weapons that exist at the boundary between what is and what could be, granting their wielder dominion over the very concepts of beginning and end.",
-        price: "8.95"
     }
 ]
 
@@ -123,17 +99,17 @@ function generateProductList(className, product, productList) {
             <p class="project-card-title">${product.name}</p>
         </div>
         <img class="product-img" src="../images/products/${productImage}.png" alt="">
-        <p class="project-description" style="margin-top: 20px; text-align: center">${product.description}</p>
+        <p class="project-description" style="margin: 20px; text-align: center">${product.description}</p>
         <div class="product-buy-container">
     `
 
-    if (product.mcmodelsLink != null) {
-        divHTML += `
-            <a target="_blank" href="${product.mcmodelsLink}">
-                    <button class="project-card-button product-buy-button">MCModels</button>
-            </a>
-        `
-    }
+    // if (product.mcmodelsLink != null) {
+    //     divHTML += `
+    //         <a target="_blank" href="${product.mcmodelsLink}">
+    //                 <button class="project-card-button product-buy-button">MCModels</button>
+    //         </a>
+    //     `
+    // }
 
     divHTML += `</div>`;
     div.innerHTML = divHTML;
