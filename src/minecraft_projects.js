@@ -35,7 +35,7 @@ const projects = [
         "description": "Adds new, powerful tool and armor sets. Includes custom tools, full-armor effects, and a powerful bonus set!",
         "version": "2.0.3",
         "collaborators": "Nyfaria",
-        "link": "https://www.curseforge.com/minecraft/another-quality-ore-set",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/another-quality-ore-set",
         "tag": "Mod"
     },
     {
