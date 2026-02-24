@@ -83,7 +83,7 @@ const projects = [
     {
         "name": "Fancy Frames",
         "description": "Adds material-based frames to customize paintings and item frames.",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/fancy-frames/",
         "tag": "Mod"
