@@ -1,5 +1,12 @@
 const projects = [
     {
+        "name": "Aquatic Plus",
+        "description": "Expands Minecraft's aquatic ecosystem to include interactive creatures and mythical beasts, accompanied by unique loot!",
+        "version": "1.0.0",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/aquatic-plus/",
+        "tag": "Mod"
+    },
+    {
         "name": "Perfect Plushies",
         "description": "Adds various decorative plushies to Minecraft, along with some Easter Eggs!",
         "version": "1.13.3",
