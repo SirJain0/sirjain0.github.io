@@ -18,6 +18,11 @@ const projectCategories = [
 
 const miscProjects = [
     {
+        "title": "Shredded Letters",
+        "description": "My debut music album",
+        "path": "shredded_letters/"
+    },
+    {
         "title": "APA Citation Generator",
         "description": "A web-based tool that generates a fully-formatted APA citation from some parameters.",
         "path": "citation_generator/"
