@@ -444,6 +444,14 @@ input:focus {
     animation: fade-in 850ms ease-in-out;
 }
 
+.subheading {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 20px 40px;
+    animation: fade-in 850ms ease-in-out;
+}
+
 /* Scrollbar handling */
 ::-webkit-scrollbar {
     width: 15px;
