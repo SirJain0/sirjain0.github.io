@@ -5,6 +5,7 @@
 :root {
     --gradient-color-1: #fb41f8;
     --gradient-color-2: #7c78ff;
+    --shredded-letters-color: #4a4439;
     --translucent-bg-color: rgba(116, 113, 142, 0.1);
     --translucent-bg-color-2: rgba(116, 113, 142, 0.15);
     --translucent-bg-color-3: rgba(116, 113, 142, 0.25);
@@ -177,6 +178,12 @@ body {
     animation: grow-fade-in 850ms ease-out;
 }
 
+.album-cover {
+    width: 26% !important;
+    margin: 60px;
+    animation: grow-delay-fade-in 850ms ease-in-out;
+}
+
 #description {
     color: gray;
     font-size: 24px; /* 35px for tablets */
@@ -197,7 +204,7 @@ body {
 #main-pg-footer {
     width: 100%;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .project-authors {
