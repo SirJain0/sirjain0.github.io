@@ -19,7 +19,7 @@ const projectCategories = [
 const miscProjects = [
     {
         "title": "Shredded Letters",
-        "description": "My debut music album",
+        "description": "My debut music album, exploring themes of first heartbreak, fractured youth, and the weight of performing under emotional pressure.",
         "path": "shredded_letters/"
     },
     {

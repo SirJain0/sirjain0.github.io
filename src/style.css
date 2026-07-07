@@ -448,7 +448,6 @@ input:focus {
     color: #ffffff;
     font-size: 26px;
     font-weight: 500;
-    margin: 20px 40px;
     animation: fade-in 850ms ease-in-out;
 }
 
@@ -476,6 +475,11 @@ input:focus {
 @media only screen and (min-width: 767px) {
     .page-text {
         margin: 20px 80px;
+    }
+
+    .subheading {
+        margin: 20px 40px;
+        animation: fade-in 850ms ease-in-out;
     }
 
     #project-list, #ss-product-list, #sps-product-list {
