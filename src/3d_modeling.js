@@ -9,7 +9,7 @@ div.innerHTML = `
     <div class="project-header">
     <h3 class="project-title" style="font-size: 26px;">Portfolio</h2>
     <div class="spacer"></div>
-    <a class="project-link" href="https://sirjain.artstation.com" target="_blank">
+    <a class="project-link" href="https://aj_131989.artstation.com" target="_blank">
         <span class="material-symbols-outlined" style="font-size: 22px;">open_in_new</span>
     </a>
     </div>
