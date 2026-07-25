@@ -75,10 +75,10 @@ const projects = [
     },
     {
         "name": "Gnyfty Gnomes",
-        "description": "Adds different gnome types to Minecraft that serve and protect the player and villages!",
+        "description": "Adds different gnome types to Minecraft that serve and protect players and villages!",
         "version": "1.0.0",
         "collaborators": "Nyfaria",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/gnyfty_gnomes/",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/gnyfty-gnomes/",
         "tag": "Mod"
     },
     {
