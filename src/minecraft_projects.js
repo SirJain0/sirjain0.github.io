@@ -47,24 +47,17 @@ const projects = [
     },
     {
         "name": "Extensive Diamonds",
-        "description": "Mod that adds three new diamond types to Minecraft!",
+        "description": "Adds three Vanilla+ diamond types to Minecraft, each with unique weapons and blocks!",
         "version": "1.3.6",
         "link": "https://www.curseforge.com/minecraft/mc-mods/extensive-diamonds/",
         "tag": "Mod"
     },
     {
         "name": "Throwable Fluids",
-        "description": "Mod that adds throwable lava, throwable water, and more!",
+        "description": "Adds Vanilla-friendly throwable lava and water!",
         "version": "3.0.0",
         "link": "https://www.curseforge.com/minecraft/mc-mods/throwable-fluids/",
         "tag": "Mod" 
-    },
-    {
-        "name": "Convenient Hitboxes",
-        "description": "Mod that adds a button toggling entity hitbox visibility, having the same functionality as F3+B.",
-        "version": "1.0.5",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/convenient-hitboxes/",
-        "tag": "Mod"
     },
     {
         "name": "Stunning Statues",
@@ -81,11 +74,20 @@ const projects = [
         "tag": "Mod" 
     },
     {
-        "name": "Ez Healing",
-        "description": "Adds a convenient slash command to heal yourself or other targets!",
-        "version": "1.0.2",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/ez-healing/",
-        "tag": "Mod" 
+        "name": "Gnyfty Gnomes",
+        "description": "Adds different gnome types to Minecraft that serve and protect players and villages!",
+        "version": "1.0.0",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/gnyfty-gnomes/",
+        "tag": "Mod"
+    },
+    {
+        "name": "Cushy Pillows",
+        "description": "Adds customizable, interactive pillows that you can sleep with, decorate, and throw at others!",
+        "version": "1.0.4",
+        "collaborators": "Daniel",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/cushy-pillows/",
+        "tag": "Mod"
     },
     {
         "name": "Fancy Frames",
@@ -104,19 +106,19 @@ const projects = [
         "tag": "Mod" 
     },
     {
+        "name": "Pet Shop",
+        "description": "Adds various pets with realistic behavior and shops which sell pet-related items and cosmetics!",
+        "version": "0.2.2 Beta",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/pet-shop/",
+        "tag": "Mod"
+    },
+    {
         "name": "Water Balloon",
         "description": "Adds Water Balloons to Minecraft so you can have some summer fun with your friends!",
         "version": "1.0.0",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/water-balloon/",
-        "tag": "Mod" 
-    },
-    {
-        "name": "Cushy Pillows",
-        "description": "Adds customizable, interactive pillows that you can sleep with, decorate, and throw at others!",
-        "version": "1.0.34",
-        "collaborators": "Daniel",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/cushy-pillows/",
         "tag": "Mod" 
     },
     {
@@ -136,19 +138,25 @@ const projects = [
         "tag": "Mod"
     },
     {
-        "name": "Pet Shop",
-        "description": "Adds various pets with realistic behavior and shops which sell pet-related items and cosmetics!",
-        "version": "0.2.2 Beta",
-        "collaborators": "Nyfaria",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/pet-shop/",
-        "tag": "Mod"
-    },
-    {
         "name": "Powers of Spite",
         "description": "A superpower mod where you can inject yourself with a magical serum to obtain random powers!",
         "version": "0.1.2 Beta",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/powers-of-spite/",
+        "tag": "Mod"
+    },
+    {
+        "name": "Convenient Hitboxes",
+        "description": "Adds a button toggling entity hitbox visibility, having the same functionality as F3+B.",
+        "version": "1.0.5",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/convenient-hitboxes/",
+        "tag": "Mod"
+    },
+    {
+        "name": "Ez Healing",
+        "description": "Adds a convenient slash command to heal yourself or other targets!",
+        "version": "1.0.2",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/ez-healing/",
         "tag": "Mod"
     },
 ]
