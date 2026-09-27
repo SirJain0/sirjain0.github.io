@@ -31,7 +31,8 @@ const projects = [
     },
     {
         "name": "Combat Oddities",
-        "description": "Adds many odd swords to Minecraft",
+        "description": "Adds many odd swords to Minecraft, each with unique abilities!",
+        "collaborators": "Nyfaria",
         "version": "1.0.1",
         "link": "https://www.curseforge.com/minecraft/mc-mods/combat-oddities/",
         "tag": "Mod"
