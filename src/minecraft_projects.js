@@ -30,6 +30,13 @@ const projects = [
         "tag": "Mod"
     },
     {
+        "name": "Combat Oddities",
+        "description": "Adds many odd swords to Minecraft",
+        "version": "1.0.1",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/combat-oddities/",
+        "tag": "Mod"
+    },
+    {
         "name": "Bats Galore",
         "description": "Adds many bats with unique loot for spooky season. Originally made for 2023 SpookyJam!",
         "version": "1.2.3",
@@ -138,14 +145,6 @@ const projects = [
         "tag": "Mod"
     },
     {
-        "name": "Powers of Spite",
-        "description": "A superpower mod where you can inject yourself with a magical serum to obtain random powers!",
-        "version": "0.1.2 Beta",
-        "collaborators": "Nyfaria",
-        "link": "https://www.curseforge.com/minecraft/mc-mods/powers-of-spite/",
-        "tag": "Mod"
-    },
-    {
         "name": "Convenient Hitboxes",
         "description": "Adds a button toggling entity hitbox visibility, having the same functionality as F3+B.",
         "version": "1.0.5",
@@ -159,6 +158,14 @@ const projects = [
         "link": "https://www.curseforge.com/minecraft/mc-mods/ez-healing/",
         "tag": "Mod"
     },
+    {
+        "name": "Powers of Spite",
+        "description": "A superpower mod where you can inject yourself with a magical serum to obtain random powers!",
+        "version": "0.1.2 Beta",
+        "collaborators": "Nyfaria",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/powers-of-spite/",
+        "tag": "Mod"
+    }
 ]
 
 // Get the project-list element
