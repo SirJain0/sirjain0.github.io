@@ -124,7 +124,7 @@ const projects = [
     {
         "name": "Water Balloon",
         "description": "Adds Water Balloons to Minecraft so you can have some summer fun with your friends!",
-        "version": "1.0.0",
+        "version": "1.0.3",
         "collaborators": "Nyfaria",
         "link": "https://www.curseforge.com/minecraft/mc-mods/water-balloon/",
         "tag": "Mod" 
